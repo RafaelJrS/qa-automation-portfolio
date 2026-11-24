@@ -1,67 +1,118 @@
 {
-  "updatedAt": "Novembro 2026",
+  "updatedAt": "24 de novembro de 2026",
   "summary": {
     "experienceYears": "+5 anos",
     "repositoriesCount": 8,
     "starredRepositories": 3,
+    "automatedScenarios": 86,
+    "totalCommits": 248,
     "certification": "CTFL v4.0 (ISTQB)",
     "postGrad": "Pós em Eng. de IA (06/2026)",
     "automationPassRate": "99.4%",
     "avgPipelineTime": "4m 12s"
   },
+  "timelineQuarters": [
+    { "quarter": "2021 T1", "scenarios": 6, "commits": 12 },
+    { "quarter": "2021 T3", "scenarios": 14, "commits": 18 },
+    { "quarter": "2022 T1", "scenarios": 22, "commits": 21 },
+    { "quarter": "2022 T3", "scenarios": 28, "commits": 16 },
+    { "quarter": "2023 T1", "scenarios": 35, "commits": 24 },
+    { "quarter": "2023 T3", "scenarios": 42, "commits": 19 },
+    { "quarter": "2024 T1", "scenarios": 50, "commits": 28 },
+    { "quarter": "2024 T3", "scenarios": 58, "commits": 22 },
+    { "quarter": "2025 T1", "scenarios": 66, "commits": 26 },
+    { "quarter": "2025 T3", "scenarios": 74, "commits": 31 },
+    { "quarter": "2026 T1", "scenarios": 80, "commits": 15 },
+    { "quarter": "2026 T4", "scenarios": 86, "commits": 16 }
+  ],
   "languages": [
-    { "name": "Python (Robot / AI / Data)", "percentage": 34, "color": "#10b981" },
-    { "name": "TypeScript / JavaScript (Playwright)", "percentage": 30, "color": "#38bdf8" },
-    { "name": "Java (ServeRest / Selenium)", "percentage": 24, "color": "#f59e0b" },
-    { "name": "SQL & Gherkin / BDD", "percentage": 12, "color": "#a855f7" }
+    { "name": "Python (Robot Framework / AI / Data)", "percentage": 34, "color": "#10b981", "repos": 4 },
+    { "name": "TypeScript / JavaScript (Playwright / Cypress)", "percentage": 30, "color": "#38bdf8", "repos": 2 },
+    { "name": "Java (ServeRest / Selenium / Appium)", "percentage": 24, "color": "#f59e0b", "repos": 3 },
+    { "name": "SQL & Gherkin / BDD", "percentage": 12, "color": "#a855f7", "repos": 5 }
   ],
   "coverageByLayer": [
     {
       "layer": "Automação Web E2E",
-      "tools": "Playwright, Robot Framework, Cypress, Selenium",
+      "tools": "Playwright, Robot Framework, Cypress, Selenium WebDriver",
       "score": 95,
-      "badge": "Core Stack"
+      "scenarios": 42
     },
     {
       "layer": "Testes de API REST & Contratos",
-      "tools": "Postman, Insomnia, Requests, RestAssured",
+      "tools": "ServeRest-java, Postman, Insomnia, Requests, RestAssured",
       "score": 90,
-      "badge": "Shift-Left"
+      "scenarios": 24
     },
     {
-      "layer": "Mobile & Cloud Testing",
+      "layer": "Mobile & Cloud Device Farm",
       "tools": "Appium, AWS Device Farm",
-      "score": 80,
-      "badge": "Cross-Device"
+      "score": 82,
+      "scenarios": 10
     },
     {
       "layer": "Performance, Stress & CI/CD",
-      "tools": "JMeter, GitHub Actions, GitLab CI, Docker",
-      "score": 85,
-      "badge": "DevOps / SRE"
-    },
-    {
-      "layer": "AI-Driven QA & Engenharia de Prompts",
-      "tools": "Agentes de QA, Geração de Cenários, Code Review IA",
-      "score": 88,
-      "badge": "Inovação"
+      "tools": "JMeter, GitHub Actions, GitLab CI, Docker, AWS Lambda",
+      "score": 86,
+      "scenarios": 10
     }
   ],
-  "qualityIndicators": [
+  "repositories": [
     {
-      "label": "Redução de Bugs Críticos em Produção",
-      "value": "-68%",
-      "context": "Com Shift-Left Testing, revisão de requisitos BDD e regressão contínua em CI/CD"
+      "name": "ServeRest-java",
+      "starred": true,
+      "language": "Java",
+      "layer": "API REST & E2E",
+      "scenarios": 18,
+      "url": "https://github.com/RafaelJrS/ServeRest-java"
     },
     {
-      "label": "Cobertura de Jornadas Críticas (Regressivo)",
-      "value": "85%+",
-      "context": "Fluxos financeiros, checkout e-commerce e integrações CRM Salesforce"
+      "name": "Play-swaglabs",
+      "starred": true,
+      "language": "TypeScript",
+      "layer": "Web E2E (Playwright)",
+      "scenarios": 16,
+      "url": "https://github.com/RafaelJrS/Play-swaglabs"
     },
     {
-      "label": "Ganho de Produtividade em Design de Testes",
-      "value": "2.4x",
-      "context": "Combinando modelagem ISTQB CTFL v4.0 com Engenharia de IA e revisão humana"
+      "name": "swaglabs_robotframework",
+      "starred": true,
+      "language": "Robot Framework / Python",
+      "layer": "Web E2E (Keyword-Driven)",
+      "scenarios": 15,
+      "url": "https://github.com/RafaelJrS/swaglabs_robotframework"
+    },
+    {
+      "name": "AmazonTesteRobot",
+      "starred": false,
+      "language": "Robot Framework",
+      "layer": "E-commerce E2E",
+      "scenarios": 12,
+      "url": "https://github.com/RafaelJrS/AmazonTesteRobot"
+    },
+    {
+      "name": "SeuBarrigaSeleniumWebDriver",
+      "starred": false,
+      "language": "Java",
+      "layer": "Financeiro Web E2E",
+      "scenarios": 11,
+      "url": "https://github.com/RafaelJrS/SeuBarrigaSeleniumWebDriver"
+    },
+    {
+      "name": "webdriver-java",
+      "starred": false,
+      "language": "Java",
+      "layer": "Web E2E (Selenium)",
+      "scenarios": 8,
+      "url": "https://github.com/RafaelJrS/webdriver-java"
+    },
+    {
+      "name": "Projeto_IAGoogleAlura",
+      "starred": false,
+      "language": "Python",
+      "layer": "AI-Driven QA / GenAI",
+      "scenarios": 6,
+      "url": "https://github.com/RafaelJrS/Projeto_IAGoogleAlura"
     }
   ]
 }

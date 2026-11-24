@@ -10,7 +10,7 @@
   <meta name="keywords" content="Shift-Left Testing, Garantia de Qualidade de Software (SQA), CTFL v4.0 (ISTQB), Automação E2E, Playwright, Robot Framework, Cypress, Selenium WebDriver, Testes de API REST, Appium, BDD / Gherkin, CI/CD, GitHub Actions, GitLab CI, AWS Device Farm, AWS Lambda, CRM Salesforce, Testes Funcionais e Regressivos, Testes de Performance, JMeter, AI-Driven QA, IA Generativa aplicada a testes, Page Object Model, Metodologias Ágeis, Scrum, Kanban, Jira, Azure DevOps, Zephyr, Rafael Junio da Silva Mello, Rafael Mello QA" />
   <meta name="author" content="Rafael Junio da Silva Mello" />
   <meta name="robots" content="index, follow" />
-  <meta name="theme-color" content="#0b0f17" />
+  <meta name="theme-color" content="#0d131c" />
 
   <!-- Open Graph / LinkedIn -->
   <meta property="og:type" content="website" />
@@ -19,1213 +19,972 @@
   <meta property="og:description" content="+5 anos em Garantia de Qualidade de Software (SQA), automação Web/API/Mobile com Playwright, Robot Framework, Cypress e Selenium integrada em CI/CD, AWS e CRM Salesforce." />
   <meta property="og:url" content="https://rafaeljrs.github.io/qa-automation-portfolio/" />
   <meta property="og:image" content="img/rafael-mello.webp" />
-  <meta property="og:site_name" content="Rafael Mello · QA Automation Portfolio" />
-
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Rafael Mello | Analista de Qualidade de Software (QA) & QA Automation Engineer" />
-  <meta name="twitter:description" content="+5 anos em QA, ISTQB CTFL v4.0, Pós em Engenharia de IA, Automação E2E (Playwright, Robot Framework, Cypress, Selenium) e Testes de API REST." />
-  <meta name="twitter:image" content="img/rafael-mello.webp" />
 
   <!-- Google Fonts: Inter & JetBrains Mono -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet" />
 
-  <!-- Favicon SVG Inline -->
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230f172a'/%3E%3Cpath d='M16 44V20h14c6 0 10 3.2 10 8.5 0 3.8-2.2 6.5-5.8 7.7L42 44h-7.2l-6.8-7H23v7h-7zm7-12.5h6.2c2.5 0 4-1.2 4-3.2 0-2-1.5-3.1-4-3.1H23v6.3z' fill='%2310b981'/%3E%3Ccircle cx='49' cy='21' r='5' fill='%2338bdf8'/%3E%3C/svg%3E" />
+  <!-- Favicon SVG -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23111827'/%3E%3Cpath d='M18 33l9 9 19-20' stroke='%2334d399' stroke-width='6' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E" />
 
   <link rel="stylesheet" href="css/style.css" />
-
-  <!-- Schema.org JSON-LD for Recruiters & Search Engines -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Rafael Junio da Silva Mello",
-    "alternateName": ["Rafael Mello", "Rafael Silva"],
-    "jobTitle": "Analista de Qualidade de Software (QA) | QA Automation Engineer",
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Mogi das Cruzes",
-      "addressRegion": "SP",
-      "addressCountry": "BR"
-    },
-    "email": "mailto:silvarafaeljr@gmail.com",
-    "url": "https://rafaeljrs.github.io/qa-automation-portfolio/",
-    "sameAs": [
-      "https://www.linkedin.com/in/rafael-junio-da-silva",
-      "https://github.com/RafaelJrS"
-    ],
-    "knowsAbout": [
-      "Shift-Left Testing",
-      "Garantia de Qualidade de Software (SQA)",
-      "CTFL v4.0 (ISTQB)",
-      "Automação E2E",
-      "Playwright",
-      "Robot Framework",
-      "Cypress",
-      "Selenium WebDriver",
-      "Testes de API REST",
-      "Appium",
-      "BDD / Gherkin",
-      "CI/CD (GitHub Actions / GitLab CI)",
-      "AWS (Device Farm, Lambda)",
-      "CRM Salesforce",
-      "Testes de Performance / Stress (JMeter)",
-      "AI-Driven QA"
-    ]
-  }
-  </script>
 </head>
-<body id="topo">
+<body class="has-slide-deck">
   <a href="#conteudo-principal" class="skip-link">Pular para o conteúdo principal</a>
 
-  <!-- 1. NAVEGAÇÃO FIXA (HEADER) -->
+  <!-- 1. HEADER FIXO -->
   <header class="site-header" role="banner">
     <div class="container header-inner">
-      <a href="#topo" class="brand" aria-label="Rafael Mello - Ir para o topo">
-        <span class="brand-mark" aria-hidden="true">RM</span>
-        <span class="brand-text">
-          <span class="brand-name">Rafael Mello</span>
-          <span class="brand-role">QA Automation · SDET</span>
-        </span>
+      <a href="#topo" class="brand" data-slide-link="topo" aria-label="Rafael Mello - Ir para o início">
+        <span class="brand-check" aria-hidden="true">✓</span>
+        <span class="brand-name">Rafael Mello</span>
       </a>
 
       <nav class="main-nav" aria-label="Navegação principal">
-        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-expanded="false" aria-controls="navLinks" aria-label="Abrir menu de navegação">
+        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-expanded="false" aria-controls="navLinks" aria-label="Abrir menu">
           <span class="hamburger-line"></span>
           <span class="hamburger-line"></span>
           <span class="hamburger-line"></span>
         </button>
 
         <ul class="nav-links" id="navLinks">
-          <li><a href="#experiencia" class="nav-link">Experiência</a></li>
-          <li><a href="#projetos" class="nav-link">Projetos</a></li>
-          <li><a href="#como-eu-testo" class="nav-link">Como eu testo</a></li>
-          <li><a href="#metricas" class="nav-link">Métricas</a></li>
-          <li><a href="#contato" class="btn btn-primary btn-sm nav-cta">Contato</a></li>
+          <li><a href="#experiencia" class="nav-link" data-slide-link="experiencia">Experiência</a></li>
+          <li><a href="#projetos" class="nav-link" data-slide-link="projetos">Projetos</a></li>
+          <li><a href="#como-testo" class="nav-link" data-slide-link="como-testo">Como testo</a></li>
+          <li><a href="dashboard.html" class="nav-link nav-link-dashboard">Dashboard</a></li>
+          <li>
+            <button type="button" class="theme-toggle" id="themeToggle" aria-label="Alternar entre tema escuro e claro" title="Alternar tema">
+              <span class="theme-circle" aria-hidden="true">◐</span>
+            </button>
+          </li>
+          <li><a href="#contato" class="btn-nav-contact" data-slide-link="contato">Contato</a></li>
         </ul>
       </nav>
-
-      <div class="header-actions">
-        <button type="button" class="theme-toggle" id="themeToggle" aria-label="Alternar entre tema escuro e claro" title="Alternar tema">
-          <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <circle cx="12" cy="12" r="5"></circle>
-            <line x1="12" y1="1" x2="12" y2="3"></line>
-            <line x1="12" y1="21" x2="12" y2="23"></line>
-            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-            <line x1="1" y1="12" x2="3" y2="12"></line>
-            <line x1="21" y1="12" x2="23" y2="12"></line>
-            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
-          </svg>
-          <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-          </svg>
-        </button>
-      </div>
     </div>
   </header>
 
-  <main id="conteudo-principal">
-    <!-- 2. HERO SECTION + TERMINAL INTERATIVO DE TESTES -->
-    <section class="hero-section" aria-labelledby="hero-title">
-      <div class="container">
+  <main id="conteudo-principal" class="slides-viewport">
+    <!-- ======================================================================
+         PÁGINA 1: #topo (HERO + TERMINAL + 4 CARDS DE RESUMO)
+         ====================================================================== -->
+    <section id="topo" class="page-slide is-active" data-slide="topo" aria-labelledby="hero-title">
+      <div class="container slide-inner">
         <div class="hero-grid">
-          <!-- Lado Esquerdo: Identidade & Pitch -->
-          <div class="hero-content">
-            <div class="hero-badges">
-              <span class="badge badge-role">Analista de Qualidade de Software (QA) | QA Automation Engineer</span>
-              <span class="badge badge-status">
-                <span class="status-dot" aria-hidden="true"></span>
-                Aberto a propostas (Trabalho Remoto / Híbrido - SP)
-              </span>
+          <!-- Lado Esquerdo -->
+          <div class="hero-left">
+            <div class="status-pill-top">
+              <span class="status-dot" aria-hidden="true"></span>
+              <span class="status-role">QA Automation Engineer / SDET</span>
+              <span class="status-open">Aberto a propostas</span>
             </div>
 
-            <div class="profile-header">
-              <div class="avatar-wrapper" id="avatarWrapper">
+            <div class="hero-identity">
+              <div class="avatar-ring" id="avatarWrapper">
                 <img
                   src="img/rafael-mello.webp"
-                  alt="Foto de perfil de Rafael Junio da Silva Mello"
+                  alt="Foto de Rafael Junio da Silva Mello"
                   class="profile-avatar"
                   id="profileAvatar"
-                  width="88"
-                  height="88"
-                  loading="eager"
+                  width="112"
+                  height="112"
                 />
                 <div class="avatar-fallback" id="avatarFallback" aria-hidden="true">RM</div>
               </div>
-              <div class="profile-titles">
-                <p class="profile-eyebrow">Rafael Junio da Silva Mello</p>
-                <h1 id="hero-title" class="hero-title">
-                  Rafael Mello
-                  <span class="hero-subtitle">Engenharia de Qualidade, Automação E2E &amp; AI-Driven QA</span>
-                </h1>
-              </div>
+              <h1 id="hero-title" class="hero-display-name">
+                Rafael<br />Mello
+              </h1>
             </div>
 
-            <p class="hero-pitch">
-              <strong>+5 anos em Garantia de Qualidade de Software (SQA)</strong>, certificado <strong>ISTQB CTFL v4.0</strong> e pós-graduando em <strong>Engenharia de IA</strong>. Especialista em automação <strong>Web, API REST e Mobile</strong> (Playwright, Robot Framework, Cypress, Selenium e Appium) integrada em pipelines <strong>CI/CD e AWS</strong>. Experiência sólida protegendo jornadas críticas em projetos <strong>financeiros, e-commerce e CRM Salesforce</strong> com cultura <em>Shift-Left Testing</em>.
+            <p class="hero-lead">
+              Construo automação de testes para <strong>Web, APIs REST e Mobile</strong> integrada em pipelines CI/CD com foco em confiabilidade e entregas contínuas. <strong>Certificado ISTQB CTFL v4.0 e pós-graduando em Engenharia de IA</strong>, aplico IA para acelerar cenários e revisão técnica. Mais de 5 anos protegendo jornadas críticas em projetos <strong>financeiros, e-commerce e CRM Salesforce</strong>.
             </p>
 
-            <!-- Chips Rápidos -->
-            <ul class="hero-chips" aria-label="Destaques do perfil">
-              <li class="chip">📍 Mogi das Cruzes / Remoto</li>
-              <li class="chip">🏦 Financeiro, E-commerce &amp; Salesforce</li>
-              <li class="chip">⚡ Playwright, Python, Java, TS/JS</li>
-              <li class="chip chip-ai">✦ AI-Driven QA</li>
+            <ul class="hero-pills" aria-label="Resumo rápido de perfil">
+              <li class="meta-pill">Mogi das Cruzes / Remoto</li>
+              <li class="meta-pill">Financeiro, E-commerce &amp; Salesforce</li>
+              <li class="meta-pill">Playwright, Python, Java, TS/JS</li>
+              <li class="meta-pill meta-pill-ai">✦ AI-Driven QA</li>
             </ul>
 
-            <!-- Botões CTA -->
-            <div class="hero-ctas">
-              <a href="mailto:silvarafaeljr@gmail.com?subject=Oportunidade%20QA%20Automation%20-%20Portf%C3%B3lio" class="btn btn-primary">
-                Fale comigo
-              </a>
-              <a href="https://www.linkedin.com/in/rafael-junio-da-silva" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+            <div class="hero-actions">
+              <a href="#contato" data-slide-link="contato" class="btn-solid-light">Fale comigo</a>
+              <a href="https://www.linkedin.com/in/rafael-junio-da-silva" target="_blank" rel="noopener noreferrer" class="btn-dark-pill">
                 LinkedIn <span aria-hidden="true">↗</span>
               </a>
-              <a href="https://github.com/RafaelJrS" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+              <a href="https://github.com/RafaelJrS" target="_blank" rel="noopener noreferrer" class="btn-dark-pill">
                 GitHub <span aria-hidden="true">↗</span>
               </a>
-              <a href="docs/curriculo-rafael-mello.pdf" download="Curriculo-Rafael-Mello-QA.pdf" target="_blank" rel="noopener" class="btn btn-outline">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-                Baixar CV
+              <a href="docs/curriculo-rafael-mello.pdf" download="Curriculo-Rafael-Mello-QA.pdf" target="_blank" rel="noopener" class="btn-dark-pill">
+                Baixar CV <span aria-hidden="true">↓</span>
               </a>
             </div>
           </div>
 
-          <!-- Lado Direito: Terminal Interativo Playwright -->
-          <div class="hero-terminal-col">
-            <div class="terminal-card" role="region" aria-label="Simulador de terminal de testes automatizados Playwright">
-              <div class="terminal-header">
-                <div class="terminal-dots" aria-hidden="true">
-                  <span class="dot dot-red"></span>
-                  <span class="dot dot-yellow"></span>
-                  <span class="dot dot-green"></span>
+          <!-- Lado Direito: Terminal Interativo -->
+          <div class="hero-right">
+            <div class="ascii-bg" aria-hidden="true"></div>
+            <div class="terminal-window" role="region" aria-label="Simulador de terminal Playwright">
+              <div class="terminal-topbar">
+                <div class="win-dots" aria-hidden="true">
+                  <span></span><span></span><span></span>
                 </div>
-                <div class="terminal-title">
-                  <span class="terminal-file-icon" aria-hidden="true">TS</span>
-                  <code>npx playwright test rafael_mello.spec.ts</code>
-                </div>
-                <button type="button" class="terminal-run-btn" id="runTestsBtn" aria-label="Rodar suíte de testes novamente">
-                  <span class="run-icon" aria-hidden="true">↻</span> rodar
+                <span class="win-filename">rafael_mello.spec.ts</span>
+                <button type="button" class="win-run-btn" id="runTestsBtn" aria-label="Rodar testes novamente">
+                  <span class="run-spin" aria-hidden="true">↻</span> rodar
                 </button>
               </div>
 
-              <div class="terminal-body" id="terminalBody" aria-live="polite" aria-atomic="false">
-                <div class="terminal-cmd-line">
-                  <span class="prompt-symbol">$</span>
-                  <span class="prompt-cmd">playwright test tests/rafael_mello.spec.ts --project=chromium</span>
-                </div>
-                <div class="terminal-subline">Running 6 tests using 3 workers · Page Object Model + Shift-Left</div>
+              <div class="terminal-content" aria-live="polite">
+                <div class="term-cmd">$ npx playwright test rafael_mello.spec.ts</div>
+                <div class="term-dots-progress" id="termDotsProgress">. . . . . .</div>
+                <div class="term-suite-title">QA Automation Engineer · CTFL v4.0</div>
 
-                <ul class="terminal-test-list" id="terminalTestList">
-                  <!-- Preenchido e animado via JS (com fallback estático para acessibilidade/no-JS) -->
-                  <li class="test-line is-visible">
-                    <span class="test-check" aria-hidden="true">✓</span>
-                    <span class="test-desc">automatiza fluxos Web E2E com Playwright, Cypress e Robot Framework</span>
-                    <span class="test-time">(0.24s)</span>
+                <ul class="term-list" id="terminalTestList">
+                  <li class="term-item is-visible">
+                    <span class="term-pass">✓</span>
+                    <span class="term-text">automatiza fluxos Web E2E com Playwright, Cypress e Robot Framework</span>
+                    <span class="term-ms">0.24s</span>
                   </li>
-                  <li class="test-line is-visible">
-                    <span class="test-check" aria-hidden="true">✓</span>
-                    <span class="test-desc">valida APIs REST e contratos com Postman, Insomnia e automação</span>
-                    <span class="test-time">(0.18s)</span>
+                  <li class="term-item is-visible">
+                    <span class="term-pass">✓</span>
+                    <span class="term-text">valida APIs REST e contratos com Postman, Insomnia e automação</span>
+                    <span class="term-ms">0.18s</span>
                   </li>
-                  <li class="test-line is-visible">
-                    <span class="test-check" aria-hidden="true">✓</span>
-                    <span class="test-desc">protege jornadas críticas em finanças, e-commerce e Salesforce</span>
-                    <span class="test-time">(0.31s)</span>
+                  <li class="term-item is-visible">
+                    <span class="term-pass">✓</span>
+                    <span class="term-text">protege jornadas críticas em finanças, e-commerce e Salesforce</span>
+                    <span class="term-ms">0.31s</span>
                   </li>
-                  <li class="test-line is-visible">
-                    <span class="test-check" aria-hidden="true">✓</span>
-                    <span class="test-desc">executa suítes em pipelines CI/CD e AWS Device Farm</span>
-                    <span class="test-time">(0.27s)</span>
+                  <li class="term-item is-visible">
+                    <span class="term-pass">✓</span>
+                    <span class="term-text">executa suítes em pipelines CI/CD e AWS Device Farm</span>
+                    <span class="term-ms">0.27s</span>
                   </li>
-                  <li class="test-line is-visible">
-                    <span class="test-check" aria-hidden="true">✓</span>
-                    <span class="test-desc">aplica padrões ISTQB CTFL v4.0 e cultura Shift-Left</span>
-                    <span class="test-time">(0.14s)</span>
+                  <li class="term-item is-visible">
+                    <span class="term-pass">✓</span>
+                    <span class="term-text">aplica padrões ISTQB CTFL v4.0 e cultura Shift-Left</span>
+                    <span class="term-ms">0.14s</span>
                   </li>
-                  <li class="test-line is-visible">
-                    <span class="test-check" aria-hidden="true">✓</span>
-                    <span class="test-desc">potencializa cenários e revisa automação com Engenharia de IA</span>
-                    <span class="test-time">(0.11s)</span>
+                  <li class="term-item is-visible">
+                    <span class="term-pass">✓</span>
+                    <span class="term-text">potencializa cenários e revisa automação com Engenharia de IA</span>
+                    <span class="term-ms">0.11s</span>
+                    <span class="term-ai-badge">IA</span>
                   </li>
                 </ul>
 
-                <div class="terminal-footer" id="terminalFooter">
-                  <span class="terminal-summary-pass">6 passed</span>, <span class="terminal-summary-fail">0 failed</span>
-                  <span class="terminal-sep">·</span>
-                  <span class="terminal-duration">Finished in 1.25s</span>
+                <div class="term-progress-bar">
+                  <div class="term-progress-fill" id="termProgressFill"></div>
+                </div>
+
+                <div class="term-summary" id="terminalFooter">
+                  <div class="term-summary-main">6 passed, 0 failed</div>
+                  <div class="term-summary-sub">Finished in 1.25 seconds</div>
                 </div>
               </div>
             </div>
           </div>
         </div>
 
-        <!-- 4 Cards de Resumo Clicáveis abaixo do Hero -->
-        <nav class="quick-nav-cards" aria-label="Atalhos das seções do portfólio">
-          <a href="#experiencia" class="quick-card">
-            <span class="quick-index">01 · Experiência</span>
-            <strong class="quick-title">Trajetória &amp; Stack</strong>
-            <span class="quick-desc">+5 anos em SQA, Keeggo &amp; Asset, CTFL v4.0 e Pós em Engenharia de IA.</span>
+        <!-- 4 Cards de Resumo Clicáveis -->
+        <nav class="summary-cards-grid" aria-label="Resumo das seções">
+          <a href="#experiencia" data-slide-link="experiencia" class="summary-card">
+            <span class="summary-kicker">01 · EXPERIÊNCIA</span>
+            <div class="summary-number">+5</div>
+            <div class="summary-title-row">
+              <strong>anos em qualidade</strong>
+              <span class="summary-arrow" aria-hidden="true">↘</span>
+            </div>
+            <span class="summary-sub">Keeggo, Asset, CTFL v4.0 e Pós em IA</span>
           </a>
-          <a href="#projetos" class="quick-card">
-            <span class="quick-index">02 · Projetos</span>
-            <strong class="quick-title">Repositórios &amp; E2E</strong>
-            <span class="quick-desc">Playwright, Robot Framework, Selenium WebDriver e Agentes de IA em QA.</span>
+
+          <a href="#projetos" data-slide-link="projetos" class="summary-card">
+            <span class="summary-kicker">02 · PROJETOS</span>
+            <div class="summary-number">3 ★</div>
+            <div class="summary-title-row">
+              <strong>projetos estrelados + 8 repos</strong>
+              <span class="summary-arrow" aria-hidden="true">↘</span>
+            </div>
+            <span class="summary-sub">ServeRest-java, Play-swaglabs e Robot</span>
           </a>
-          <a href="#como-eu-testo" class="quick-card">
-            <span class="quick-index">03 · Como eu testo</span>
-            <strong class="quick-title">Engenharia de Testes</strong>
-            <span class="quick-desc">AI-Driven QA, Arquitetura em camadas, Bug Report, BDD e Regressão CI/CD.</span>
+
+          <a href="#como-testo" data-slide-link="como-testo" class="summary-card">
+            <span class="summary-kicker">03 · COMO EU TESTO</span>
+            <div class="summary-number">5</div>
+            <div class="summary-title-row">
+              <strong>pilares de engenharia</strong>
+              <span class="summary-arrow" aria-hidden="true">↘</span>
+            </div>
+            <span class="summary-sub">IA em QA, seletores, bug report, BDD e CI</span>
           </a>
-          <a href="#metricas" class="quick-card">
-            <span class="quick-index">04 · Métricas</span>
-            <strong class="quick-title">Indicadores &amp; Cobertura</strong>
-            <span class="quick-desc">Distribuição de linguagens, cobertura Web/API/Mobile e impactos reais.</span>
+
+          <a href="dashboard.html" class="summary-card">
+            <span class="summary-kicker">04 · DASHBOARD</span>
+            <div class="summary-number">86</div>
+            <div class="summary-title-row">
+              <strong>cenários automatizados</strong>
+              <span class="summary-arrow" aria-hidden="true">↘</span>
+            </div>
+            <span class="summary-sub">Métricas interativas de stack e cobertura</span>
           </a>
         </nav>
+
+        <!-- Rodapé de Paginação / Scroll -->
+        <footer class="slide-pagination-footer slide-pagination-center">
+          <a href="#experiencia" data-slide-link="experiencia" class="scroll-cue">
+            <span class="mouse-icon" aria-hidden="true"><span class="mouse-wheel"></span></span>
+            <span>começar pela experiência</span>
+          </a>
+        </footer>
       </div>
     </section>
 
-    <!-- 3. EXPERIÊNCIA & STACK TECNOLÓGICA -->
-    <section id="experiencia" class="section" aria-labelledby="experiencia-title">
-      <div class="container">
-        <div class="section-header">
-          <span class="section-kicker">01 · Trajetória Profissional &amp; Qualificações</span>
-          <h2 id="experiencia-title" class="section-title">Experiência &amp; Stack Tecnológica</h2>
-          <p class="section-subtitle">
-            Atuação consistente em Garantia de Qualidade de Software (SQA), combinando fundamentos sólidos do syllabus <strong>ISTQB CTFL v4.0</strong>, automação escalável e <strong>Engenharia de IA</strong>.
-          </p>
-        </div>
-
-        <!-- Destaques Numéricos no Topo -->
-        <div class="highlights-banner" role="list" aria-label="Destaques principais de carreira">
-          <div class="highlight-stat" role="listitem">
-            <span class="highlight-value">+5 anos</span>
-            <span class="highlight-label">em Qualidade de Software (SQA)</span>
+    <!-- ======================================================================
+         PÁGINA 2: #experiencia (TRAJETÓRIA & FERRAMENTAS)
+         ====================================================================== -->
+    <section id="experiencia" class="page-slide" data-slide="experiencia" aria-labelledby="exp-title">
+      <div class="container slide-inner">
+        <div class="slide-top-bar">
+          <div>
+            <span class="slide-eyebrow">EXPERIÊNCIA</span>
+            <h2 id="exp-title" class="slide-heading">Da homologação crítica à engenharia de qualidade e IA.</h2>
           </div>
-          <div class="highlight-stat" role="listitem">
-            <span class="highlight-value">CTFL v4.0</span>
-            <span class="highlight-label">Certificado ISTQB / BSTQB (05/2026)</span>
-          </div>
-          <div class="highlight-stat" role="listitem">
-            <span class="highlight-value">Pós em IA</span>
-            <span class="highlight-label">Engenharia de IA — UNIPDS (06/2026)</span>
-          </div>
-          <div class="highlight-stat" role="listitem">
-            <span class="highlight-value">Web · API · Mobile</span>
-            <span class="highlight-label">Automação E2E integrada em CI/CD &amp; AWS</span>
-          </div>
-        </div>
 
-        <div class="experience-layout">
-          <!-- Coluna Esquerda: Linha do Tempo Profissional + Formação -->
-          <div class="timeline-column">
-            <h3 class="subsection-title">Histórico Profissional</h3>
-
-            <ol class="timeline">
-              <!-- Experiência 1: Keeggo -->
-              <li class="timeline-item">
-                <div class="timeline-marker" aria-hidden="true"></div>
-                <article class="timeline-card">
-                  <header class="timeline-card-header">
-                    <div>
-                      <h4 class="company-name">Keeggo Technology Brasil S/A</h4>
-                      <p class="role-title">Analista de Qualidade de Software</p>
-                    </div>
-                    <span class="period-badge">Out/2021 – Out/2026 (Atual)</span>
-                  </header>
-                  <ul class="timeline-list">
-                    <li>Atuação estratégica em projetos <strong>financeiros, e-commerce, CRM Salesforce</strong> e arquitetura em nuvem <strong>AWS (Device Farm, Lambda)</strong>.</li>
-                    <li>Desenvolvimento e manutenção de <strong>automação Web, API REST e Mobile</strong>, além da execução de testes funcionais, não funcionais, regressão, integração e <strong>testes de stress/performance</strong>, com acompanhamento ativo de <em>Lead Time</em> em entregas críticas.</li>
-                    <li><strong>Impacto direto:</strong> redução expressiva de bugs em produção, ampliação da cobertura de testes automatizados e de stress, criação de um novo padrão de documentação de testes e capacitação/mentoria técnica da equipe e de novos colaboradores.</li>
-                  </ul>
-                  <div class="tag-row">
-                    <span class="tech-tag">Playwright</span>
-                    <span class="tech-tag">Robot Framework</span>
-                    <span class="tech-tag">CRM Salesforce</span>
-                    <span class="tech-tag">AWS Device Farm &amp; Lambda</span>
-                    <span class="tech-tag">API REST</span>
-                    <span class="tech-tag">JMeter</span>
-                  </div>
-                </article>
-              </li>
-
-              <!-- Experiência 2: Asset -->
-              <li class="timeline-item">
-                <div class="timeline-marker" aria-hidden="true"></div>
-                <article class="timeline-card">
-                  <header class="timeline-card-header">
-                    <div>
-                      <h4 class="company-name">Asset Desenv de Soluções Digitais LTDA</h4>
-                      <p class="role-title">Analista de Qualidade de Software</p>
-                    </div>
-                    <span class="period-badge">Nov/2020 – Set/2021</span>
-                  </header>
-                  <ul class="timeline-list">
-                    <li>Planejamento, modelagem e execução de testes manuais e <strong>automação Web</strong> em sistemas web, mobile e desktop.</li>
-                    <li>Atuação colaborativa e próxima com <strong>DEV, SRE e Product Owner (PO)</strong> em cerimônias ágeis (Scrum/Kanban).</li>
-                    <li><strong>Impacto direto:</strong> identificação antecipada de bugs críticos antes da entrega ao cliente final e implantação estruturada da <strong>cultura de qualidade de software (Shift-Left Testing)</strong> na empresa.</li>
-                  </ul>
-                  <div class="tag-row">
-                    <span class="tech-tag">Selenium WebDriver</span>
-                    <span class="tech-tag">Testes Web / Mobile / Desktop</span>
-                    <span class="tech-tag">Shift-Left Testing</span>
-                    <span class="tech-tag">Scrum &amp; Kanban</span>
-                  </div>
-                </article>
-              </li>
-            </ol>
-
-            <!-- Formação Acadêmica, Certificações & Idiomas -->
-            <h3 class="subsection-title mt-lg">Formação, Certificações &amp; Idiomas</h3>
-            <div class="education-grid">
-              <article class="edu-card">
-                <span class="edu-type">Pós-Graduação · Em andamento (06/2026)</span>
-                <h4 class="edu-title">Engenharia de IA</h4>
-                <p class="edu-org">UNIPDS Educação</p>
-              </article>
-              <article class="edu-card">
-                <span class="edu-type">Certificação Internacional · 05/2026</span>
-                <h4 class="edu-title">CTFL v4.0 (Certified Tester Foundation Level)</h4>
-                <p class="edu-org">ISTQB / BSTQB</p>
-              </article>
-              <article class="edu-card">
-                <span class="edu-type">Graduação · Concluído em 2024</span>
-                <h4 class="edu-title">Bacharelado em Ciência da Computação</h4>
-                <p class="edu-org">FMU (Faculdades Metropolitanas Unidas)</p>
-              </article>
-              <article class="edu-card">
-                <span class="edu-type">Comunicação Global</span>
-                <h4 class="edu-title">Idiomas</h4>
-                <p class="edu-org">Português (Nativo) · Inglês (Intermediário — leitura técnica, documentação e código)</p>
-              </article>
+          <div class="top-stat-boxes">
+            <div class="mini-stat-box">
+              <span class="mini-stat-num">+5 anos</span>
+              <span class="mini-stat-desc">em Garantia de Qualidade (SQA)</span>
             </div>
-          </div>
-
-          <!-- Coluna Direita: Stack Agrupada por Categoria -->
-          <div class="stack-column">
-            <h3 class="subsection-title">Stack Tecnológica por Especialidade</h3>
-            <div class="stack-categories">
-              <article class="stack-group">
-                <h4 class="stack-group-title">
-                  <span class="stack-icon" aria-hidden="true">⚙️</span>
-                  Automação Web &amp; Mobile
-                </h4>
-                <div class="badge-cloud">
-                  <span class="skill-badge">Playwright</span>
-                  <span class="skill-badge">Robot Framework</span>
-                  <span class="skill-badge">Cypress</span>
-                  <span class="skill-badge">Selenium WebDriver</span>
-                  <span class="skill-badge">Appium</span>
-                  <span class="skill-badge">Page Object Model (POM)</span>
-                </div>
-              </article>
-
-              <article class="stack-group">
-                <h4 class="stack-group-title">
-                  <span class="stack-icon" aria-hidden="true">💻</span>
-                  Linguagens
-                </h4>
-                <div class="badge-cloud">
-                  <span class="skill-badge">TypeScript</span>
-                  <span class="skill-badge">JavaScript</span>
-                  <span class="skill-badge">Python</span>
-                  <span class="skill-badge">Java</span>
-                </div>
-              </article>
-
-              <article class="stack-group">
-                <h4 class="stack-group-title">
-                  <span class="stack-icon" aria-hidden="true">🔌</span>
-                  APIs &amp; Performance
-                </h4>
-                <div class="badge-cloud">
-                  <span class="skill-badge">REST APIs</span>
-                  <span class="skill-badge">Postman</span>
-                  <span class="skill-badge">Insomnia</span>
-                  <span class="skill-badge">JMeter (Performance / Stress)</span>
-                  <span class="skill-badge">Gherkin / BDD</span>
-                </div>
-              </article>
-
-              <article class="stack-group">
-                <h4 class="stack-group-title">
-                  <span class="stack-icon" aria-hidden="true">☁️</span>
-                  CI/CD, Cloud &amp; Banco de Dados
-                </h4>
-                <div class="badge-cloud">
-                  <span class="skill-badge">GitHub Actions</span>
-                  <span class="skill-badge">GitLab CI</span>
-                  <span class="skill-badge">AWS (Device Farm, Lambda)</span>
-                  <span class="skill-badge">Docker</span>
-                  <span class="skill-badge">SQL</span>
-                  <span class="skill-badge">PostgreSQL</span>
-                  <span class="skill-badge">MySQL</span>
-                  <span class="skill-badge">Oracle</span>
-                  <span class="skill-badge">DBeaver</span>
-                </div>
-              </article>
-
-              <article class="stack-group">
-                <h4 class="stack-group-title">
-                  <span class="stack-icon" aria-hidden="true">📋</span>
-                  Gestão &amp; Metodologias
-                </h4>
-                <div class="badge-cloud">
-                  <span class="skill-badge">Jira</span>
-                  <span class="skill-badge">Azure DevOps</span>
-                  <span class="skill-badge">Zephyr</span>
-                  <span class="skill-badge">RQM</span>
-                  <span class="skill-badge">ServiceNow</span>
-                  <span class="skill-badge">Scrum</span>
-                  <span class="skill-badge">Kanban</span>
-                  <span class="skill-badge">Shift-Left Testing</span>
-                </div>
-              </article>
-
-              <article class="stack-group stack-group-ai">
-                <h4 class="stack-group-title">
-                  <span class="stack-icon" aria-hidden="true">✦</span>
-                  IA Aplicada a QA (AI-Driven QA)
-                </h4>
-                <div class="badge-cloud">
-                  <span class="skill-badge skill-badge-ai">Engenharia de Prompts para QA</span>
-                  <span class="skill-badge skill-badge-ai">Agentes de Automação</span>
-                  <span class="skill-badge skill-badge-ai">Revisão Assistida por IA</span>
-                  <span class="skill-badge skill-badge-ai">IA Generativa aplicada a testes</span>
-                </div>
-              </article>
+            <div class="mini-stat-box">
+              <span class="mini-stat-num">CTFL v4.0</span>
+              <span class="mini-stat-desc">Certificado ISTQB / BSTQB</span>
+            </div>
+            <div class="mini-stat-box">
+              <span class="mini-stat-num">Pós em IA</span>
+              <span class="mini-stat-desc">Engenharia de IA (06/2026)</span>
             </div>
           </div>
         </div>
-      </div>
-    </section>
 
-    <!-- 4. PROJETOS -->
-    <section id="projetos" class="section section-alt" aria-labelledby="projetos-title">
-      <div class="container">
-        <div class="section-header">
-          <span class="section-kicker">02 · Portfólio Prático &amp; Código Aberto</span>
-          <h2 id="projetos-title" class="section-title">Projetos em Destaque</h2>
-          <p class="section-subtitle">
-            Arquiteturas reais de automação E2E aplicando <strong>Page Object Model</strong>, separação em camadas, seletores resilientes e fluxos modernos de <strong>AI-Driven QA</strong>.
-          </p>
-        </div>
-
-        <!-- 3 Cards de Destaque (Projetos com ★ no GitHub) -->
-        <div class="featured-projects-grid">
-          <!-- Card 1: ServeRest-java -->
-          <article class="project-card">
-            <div class="project-card-top">
-              <div class="project-meta">
-                <span class="project-type">Automação de API REST &amp; E2E</span>
-                <span class="project-star-badge" title="Repositório em destaque com estrela no GitHub">
-                  <span class="project-lang-dot dot-java" aria-hidden="true"></span>
-                  Java · ★ Starred
-                </span>
+        <div class="exp-two-cols">
+          <!-- Coluna Esquerda: Linha do Tempo -->
+          <div class="exp-timeline">
+            <article class="exp-node is-current">
+              <div class="exp-node-header">
+                <div class="exp-company-row">
+                  <span class="exp-dot is-active" aria-hidden="true"></span>
+                  <span class="exp-company">Keeggo Technology Brasil S/A</span>
+                  <span class="exp-badge-current">Atual</span>
+                </div>
+                <span class="exp-dates">out 2021 – out 2026 · 5 anos</span>
               </div>
-              <h3 class="project-title">
-                <a href="https://github.com/RafaelJrS/ServeRest-java" target="_blank" rel="noopener noreferrer">
-                  ServeRest-java <span aria-hidden="true">↗</span>
-                </a>
-              </h3>
-              <p class="project-desc">
-                Automação de testes em <strong>Java</strong> sobre a plataforma ServeRest, validando fluxos críticos, endpoints REST, contratos, autenticação e regras de negócio com arquitetura estruturada.
+              <h3 class="exp-role">Analista de Qualidade de Software (QA Automation)</h3>
+              <p class="exp-p">
+                Atuação em projetos de alta criticidade nos setores <strong>financeiro, e-commerce, CRM Salesforce</strong> e nuvem <strong>AWS (Device Farm, Lambda)</strong>.
               </p>
-            </div>
-            <div class="project-card-bottom">
-              <div class="tag-row">
-                <span class="tech-tag">Java</span>
-                <span class="tech-tag">ServeRest</span>
-                <span class="tech-tag">Testes de API / E2E</span>
+              <p class="exp-p">
+                Automação <strong>Web, API REST e Mobile</strong>, testes funcionais, não funcionais, regressão, integração e stress (JMeter), acompanhando Lead Time. Redução de bugs em produção, ampliação da cobertura automatizada, criação de novo processo de documentação e mentoria técnica de equipe e novos QAs.
+              </p>
+            </article>
+
+            <article class="exp-node">
+              <div class="exp-node-header">
+                <div class="exp-company-row">
+                  <span class="exp-dot" aria-hidden="true"></span>
+                  <span class="exp-company">Asset Desenv de Soluções Digitais LTDA</span>
+                </div>
+                <span class="exp-dates">nov 2020 – set 2021 · 11 meses</span>
               </div>
-              <a href="https://github.com/RafaelJrS/ServeRest-java" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="Ver repositório ServeRest-java no GitHub">
-                Ver código no GitHub →
+              <h3 class="exp-role">Analista de Qualidade de Software</h3>
+              <p class="exp-p">
+                Testes manuais e automação Web em sistemas web, mobile e desktop em parceria direta com DEV, SRE e Product Owner (PO).
+              </p>
+              <p class="exp-p">
+                Identificação antecipada de bugs críticos antes da entrega ao cliente e implantação da cultura de qualidade de software (Shift-Left Testing) na empresa.
+              </p>
+            </article>
+
+            <article class="exp-node">
+              <div class="exp-node-header">
+                <div class="exp-company-row">
+                  <span class="exp-dot" aria-hidden="true"></span>
+                  <span class="exp-company">Formação Acadêmica &amp; Certificações</span>
+                </div>
+                <span class="exp-dates">2024 – 2026</span>
+              </div>
+              <h3 class="exp-role">Pós em Engenharia de IA · ISTQB CTFL v4.0 · Ciência da Computação</h3>
+              <p class="exp-p">
+                • <strong>Pós-Graduação em Engenharia de IA</strong> — UNIPDS Educação (Em andamento - 06/2026)<br />
+                • <strong>Certificação CTFL v4.0</strong> (Certified Tester Foundation Level) — ISTQB/BSTQB (05/2026)<br />
+                • <strong>Bacharelado em Ciência da Computação</strong> — FMU (2024) · Idiomas: Português (Nativo) | Inglês (Intermediário)
+              </p>
+            </article>
+          </div>
+
+          <!-- Coluna Direita: Painel Ferramentas que uso -->
+          <aside class="tools-panel" aria-label="Stack Tecnológica">
+            <span class="tools-kicker">FERRAMENTAS QUE USO</span>
+            <h3 class="tools-langs">Python, TypeScript, JavaScript e Java</h3>
+
+            <div class="tools-group">
+              <h4>Automação Web &amp; Mobile</h4>
+              <div class="tools-pills">
+                <span>Playwright</span><span>Robot Framework</span><span>Cypress</span><span>Selenium WebDriver</span><span>Appium</span><span>Page Object Model</span>
+              </div>
+            </div>
+
+            <div class="tools-group">
+              <h4>APIs, Performance &amp; BDD</h4>
+              <div class="tools-pills">
+                <span>REST APIs</span><span>Postman</span><span>Insomnia</span><span>JMeter (Stress)</span><span>BDD / Gherkin</span><span>ServeRest</span>
+              </div>
+            </div>
+
+            <div class="tools-group">
+              <h4>CI/CD, Cloud &amp; Bancos de Dados</h4>
+              <div class="tools-pills">
+                <span>GitHub Actions</span><span>GitLab CI</span><span>AWS Device Farm</span><span>AWS Lambda</span><span>Docker</span><span>SQL / PostgreSQL / MySQL / Oracle</span><span>DBeaver</span>
+              </div>
+            </div>
+
+            <div class="tools-group">
+              <h4>IA aplicada a QA (AI-Driven QA)</h4>
+              <div class="tools-pills tools-pills-ai">
+                <span>Engenharia de Prompts QA</span><span>Agentes de Automação</span><span>Revisão Assistida por IA</span><span>Gemini / Claude</span>
+              </div>
+            </div>
+
+            <div class="tools-group">
+              <h4>Gestão, CRM &amp; Metodologias</h4>
+              <div class="tools-pills">
+                <span>CRM Salesforce</span><span>Jira</span><span>Azure DevOps</span><span>Zephyr</span><span>RQM</span><span>ServiceNow</span><span>Scrum &amp; Kanban</span><span>Shift-Left Testing</span>
+              </div>
+            </div>
+          </aside>
+        </div>
+
+        <!-- Rodapé de Paginação -->
+        <footer class="slide-pagination-footer">
+          <a href="#topo" data-slide-link="topo" class="page-back-link">↑ voltar: início</a>
+          <a href="#projetos" data-slide-link="projetos" class="scroll-cue">
+            <span class="mouse-icon" aria-hidden="true"><span class="mouse-wheel"></span></span>
+            <span>próximo: projetos</span>
+          </a>
+          <span class="page-step-indicator">01 / 04</span>
+        </footer>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         PÁGINA 3: #projetos (DESTAQUES COM ESTRELA + CATÁLOGO 5 COLUNAS)
+         ====================================================================== -->
+    <section id="projetos" class="page-slide" data-slide="projetos" aria-labelledby="proj-title">
+      <div class="container slide-inner">
+        <div class="slide-top-bar">
+          <div>
+            <span class="slide-eyebrow">PROJETOS</span>
+            <h2 id="proj-title" class="slide-heading">O que construí e publiquei.</h2>
+          </div>
+
+          <div class="top-stat-boxes">
+            <div class="mini-stat-box">
+              <span class="mini-stat-num">3 ★</span>
+              <span class="mini-stat-desc">projetos destaque com estrela</span>
+            </div>
+            <div class="mini-stat-box">
+              <span class="mini-stat-num">8</span>
+              <span class="mini-stat-desc">repositórios públicos de QA &amp; IA</span>
+            </div>
+            <div class="mini-stat-box">
+              <span class="mini-stat-num">86</span>
+              <span class="mini-stat-desc">cenários automatizados</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3 Cards Principais (Os 3 projetos com Estrela no GitHub) -->
+        <div class="showcase-grid">
+          <!-- Card 1: ServeRest-java -->
+          <article class="showcase-card is-featured">
+            <div class="showcase-body">
+              <div class="showcase-top-badges">
+                <span class="showcase-pill-featured">★ Starred · Destaque</span>
+                <span class="showcase-lang">Java</span>
+              </div>
+              <h3 class="showcase-title">ServeRest-java</h3>
+              <p class="showcase-subtitle">Automação de API REST e fluxos E2E em Java</p>
+              <p class="showcase-desc">
+                Suíte estruturada validando rotas críticas de usuários, autenticação JWT, produtos e carrinhos na API ServeRest, com validações de contrato, status HTTP e regras de negócio.
+              </p>
+              <div class="showcase-tags">
+                <span>Java</span><span>API REST</span><span>ServeRest</span><span>Contratos</span>
+              </div>
+            </div>
+            <div class="showcase-actions">
+              <a href="https://github.com/RafaelJrS/ServeRest-java" target="_blank" rel="noopener noreferrer" class="btn-solid-light btn-sm">
+                Abrir repositório ↗
+              </a>
+              <a href="https://github.com/RafaelJrS?tab=repositories&q=&type=&language=&sort=stargazers" target="_blank" rel="noopener noreferrer" class="btn-dark-pill btn-sm">
+                ★ Stargazers
               </a>
             </div>
           </article>
 
           <!-- Card 2: Play-swaglabs -->
-          <article class="project-card">
-            <div class="project-card-top">
-              <div class="project-meta">
-                <span class="project-type">Automação Web E2E</span>
-                <span class="project-star-badge" title="Repositório em destaque com estrela no GitHub">
-                  <span class="project-lang-dot dot-ts" aria-hidden="true"></span>
-                  TypeScript · ★ Starred
-                </span>
+          <article class="showcase-card">
+            <div class="showcase-body">
+              <div class="showcase-top-badges">
+                <span class="showcase-pill-featured">★ Starred</span>
+                <span class="showcase-lang">TypeScript</span>
               </div>
-              <h3 class="project-title">
-                <a href="https://github.com/RafaelJrS/Play-swaglabs" target="_blank" rel="noopener noreferrer">
-                  Play-swaglabs <span aria-hidden="true">↗</span>
-                </a>
-              </h3>
-              <p class="project-desc">
-                Automação E2E moderna no ecossistema Swag Labs focada em arquitetura limpa, <strong>Page Object Model</strong>, asserções determinísticas e seletores resilientes contra flakiness.
+              <h3 class="showcase-title">Play-swaglabs</h3>
+              <p class="showcase-subtitle">Automação Web E2E moderna com Playwright</p>
+              <p class="showcase-desc">
+                Arquitetura limpa em Page Object Model no Swag Labs usando TypeScript, seletores resilientes (data-testid), web-first assertions e execução rápida livre de sleeps fixos.
               </p>
-            </div>
-            <div class="project-card-bottom">
-              <div class="tag-row">
-                <span class="tech-tag">Playwright</span>
-                <span class="tech-tag">TypeScript</span>
-                <span class="tech-tag">Page Objects</span>
+              <div class="showcase-tags">
+                <span>Playwright</span><span>TypeScript</span><span>Page Objects</span>
               </div>
-              <a href="https://github.com/RafaelJrS/Play-swaglabs" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="Ver repositório Play-swaglabs no GitHub">
-                Ver código no GitHub →
+            </div>
+            <div class="showcase-actions">
+              <a href="https://github.com/RafaelJrS/Play-swaglabs" target="_blank" rel="noopener noreferrer" class="btn-solid-light btn-sm">
+                Abrir repositório ↗
+              </a>
+              <a href="https://github.com/RafaelJrS/Play-swaglabs" target="_blank" rel="noopener noreferrer" class="btn-dark-pill btn-sm">
+                Código
               </a>
             </div>
           </article>
 
-          <!-- Card 3: SwagLabs Robot Framework -->
-          <article class="project-card">
-            <div class="project-card-top">
-              <div class="project-meta">
-                <span class="project-type">Keyword-Driven &amp; BDD</span>
-                <span class="project-star-badge" title="Repositório em destaque com estrela no GitHub">
-                  <span class="project-lang-dot dot-py" aria-hidden="true"></span>
-                  Robot Framework · ★ Starred
-                </span>
+          <!-- Card 3: swaglabs_robotframework -->
+          <article class="showcase-card">
+            <div class="showcase-body">
+              <div class="showcase-top-badges">
+                <span class="showcase-pill-featured">★ Starred</span>
+                <span class="showcase-lang">Robot Framework</span>
               </div>
-              <h3 class="project-title">
-                <a href="https://github.com/RafaelJrS/swaglabs_robotframework" target="_blank" rel="noopener noreferrer">
-                  swaglabs_robotframework <span aria-hidden="true">↗</span>
-                </a>
-              </h3>
-              <p class="project-desc">
-                Suíte E2E modularizada em <strong>Robot Framework e Python</strong> separando claramente casos de teste, keywords de negócio reutilizáveis, massa de dados e locators.
+              <h3 class="showcase-title">swaglabs_robotframework</h3>
+              <p class="showcase-subtitle">Suíte E2E modularizada em camadas com Python</p>
+              <p class="showcase-desc">
+                Automação Web separando casos de teste, keywords de negócio reutilizáveis, variáveis de ambiente e locators, facilitando manutenção e leitura pelo time de negócio.
               </p>
-            </div>
-            <div class="project-card-bottom">
-              <div class="tag-row">
-                <span class="tech-tag">Robot Framework</span>
-                <span class="tech-tag">Python</span>
-                <span class="tech-tag">Camadas</span>
+              <div class="showcase-tags">
+                <span>Robot Framework</span><span>Python</span><span>Keyword-Driven</span>
               </div>
-              <a href="https://github.com/RafaelJrS/swaglabs_robotframework" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="Ver repositório SwagLabs Robot Framework no GitHub">
-                Ver código no GitHub →
+            </div>
+            <div class="showcase-actions">
+              <a href="https://github.com/RafaelJrS/swaglabs_robotframework" target="_blank" rel="noopener noreferrer" class="btn-solid-light btn-sm">
+                Abrir repositório ↗
+              </a>
+              <a href="https://github.com/RafaelJrS/swaglabs_robotframework" target="_blank" rel="noopener noreferrer" class="btn-dark-pill btn-sm">
+                Código
               </a>
             </div>
           </article>
         </div>
 
-        <div class="starred-reference-bar">
-          <span>★ Referência direta dos 3 repositórios com estrelas no GitHub:</span>
-          <a href="https://github.com/RafaelJrS?tab=repositories&amp;q=&amp;type=&amp;language=&amp;sort=stargazers" target="_blank" rel="noopener noreferrer" class="starred-ref-link">
-            Ver repositórios ordenados por estrelas (Stargazers) no GitHub ↗
+        <!-- Barra inferior: Automação de testes por categoria -->
+        <div class="catalog-header-row">
+          <h3 class="catalog-heading">Automação de testes &amp; Repositórios</h3>
+          <a href="dashboard.html" class="catalog-dash-link">Ver os números no dashboard →</a>
+        </div>
+
+        <div class="catalog-five-cols">
+          <div class="catalog-col">
+            <span class="catalog-col-title">WEB E E2E (PLAYWRIGHT / ROBOT)</span>
+            <ul class="catalog-links">
+              <li><a href="https://github.com/RafaelJrS/Play-swaglabs" target="_blank" rel="noopener noreferrer">Play-swaglabs ★</a></li>
+              <li><a href="https://github.com/RafaelJrS/swaglabs_robotframework" target="_blank" rel="noopener noreferrer">swaglabs_robotframework ★</a></li>
+              <li><a href="https://github.com/RafaelJrS/AmazonTesteRobot" target="_blank" rel="noopener noreferrer">AmazonTesteRobot</a></li>
+            </ul>
+          </div>
+
+          <div class="catalog-col">
+            <span class="catalog-col-title">APIS &amp; SELENIUM JAVA</span>
+            <ul class="catalog-links">
+              <li><a href="https://github.com/RafaelJrS/ServeRest-java" target="_blank" rel="noopener noreferrer">ServeRest-java ★</a></li>
+              <li><a href="https://github.com/RafaelJrS/SeuBarrigaSeleniumWebDriver" target="_blank" rel="noopener noreferrer">SeuBarrigaSeleniumWebDriver</a></li>
+              <li><a href="https://github.com/RafaelJrS/webdriver-java" target="_blank" rel="noopener noreferrer">webdriver-java</a></li>
+            </ul>
+          </div>
+
+          <div class="catalog-col">
+            <span class="catalog-col-title">MOBILE &amp; CLOUD</span>
+            <ul class="catalog-links">
+              <li><a href="#experiencia" data-slide-link="experiencia">Appium Android &amp; iOS</a></li>
+              <li><a href="#experiencia" data-slide-link="experiencia">AWS Device Farm Suites</a></li>
+              <li><a href="#experiencia" data-slide-link="experiencia">CRM Salesforce E2E</a></li>
+            </ul>
+          </div>
+
+          <div class="catalog-col">
+            <span class="catalog-col-title">CI/CD &amp; PERFORMANCE</span>
+            <ul class="catalog-links">
+              <li><a href="#como-testo" data-slide-link="como-testo">GitHub Actions &amp; GitLab CI</a></li>
+              <li><a href="#como-testo" data-slide-link="como-testo">Testes de Stress (JMeter)</a></li>
+              <li><a href="#como-testo" data-slide-link="como-testo">Estratégia por Tags CI</a></li>
+            </ul>
+          </div>
+
+          <div class="catalog-col">
+            <span class="catalog-col-title">IA &amp; DADOS COM PYTHON</span>
+            <ul class="catalog-links">
+              <li><a href="https://github.com/RafaelJrS/Projeto_IAGoogleAlura" target="_blank" rel="noopener noreferrer">Projeto_IAGoogleAlura</a></li>
+              <li><a href="https://github.com/RafaelJrS/Imersao-Dados-com-Python" target="_blank" rel="noopener noreferrer">Imersao-Dados-com-Python</a></li>
+              <li><a href="https://github.com/RafaelJrS?tab=repositories&q=&type=&language=&sort=stargazers" target="_blank" rel="noopener noreferrer">★ Ver todos os Stargazers</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Rodapé de Paginação -->
+        <footer class="slide-pagination-footer">
+          <a href="#experiencia" data-slide-link="experiencia" class="page-back-link">↑ voltar: experiência</a>
+          <a href="#como-testo" data-slide-link="como-testo" class="scroll-cue">
+            <span class="mouse-icon" aria-hidden="true"><span class="mouse-wheel"></span></span>
+            <span>próximo: como testo</span>
           </a>
-        </div>
-
-        <!-- Lista Categorizada de Repositórios -->
-        <div class="repo-catalog">
-          <div class="repo-category">
-            <h3 class="repo-cat-title">
-              <span aria-hidden="true">🌐</span> Web, API &amp; E2E Automation
-            </h3>
-            <ul class="repo-list">
-              <li class="repo-item">
-                <a href="https://github.com/RafaelJrS/ServeRest-java" target="_blank" rel="noopener noreferrer" class="repo-link">
-                  <div class="repo-info">
-                    <code class="repo-name">ServeRest-java ★</code>
-                    <span class="repo-summary">Automação de testes em Java validando fluxos e contratos no ServeRest.</span>
-                  </div>
-                  <span class="repo-stack-pill">Java · ServeRest</span>
-                </a>
-              </li>
-              <li class="repo-item">
-                <a href="https://github.com/RafaelJrS/Play-swaglabs" target="_blank" rel="noopener noreferrer" class="repo-link">
-                  <div class="repo-info">
-                    <code class="repo-name">Play-swaglabs ★</code>
-                    <span class="repo-summary">Suíte E2E com Playwright + TypeScript estruturada em Page Objects.</span>
-                  </div>
-                  <span class="repo-stack-pill">Playwright · TS</span>
-                </a>
-              </li>
-              <li class="repo-item">
-                <a href="https://github.com/RafaelJrS/swaglabs_robotframework" target="_blank" rel="noopener noreferrer" class="repo-link">
-                  <div class="repo-info">
-                    <code class="repo-name">swaglabs_robotframework ★</code>
-                    <span class="repo-summary">Automação Web modular em camadas com Robot Framework e Python.</span>
-                  </div>
-                  <span class="repo-stack-pill">Robot · Python</span>
-                </a>
-              </li>
-              <li class="repo-item">
-                <a href="https://github.com/RafaelJrS/AmazonTesteRobot" target="_blank" rel="noopener noreferrer" class="repo-link">
-                  <div class="repo-info">
-                    <code class="repo-name">AmazonTesteRobot</code>
-                    <span class="repo-summary">Cenários E2E de busca, catálogo e carrinho em e-commerce de alta complexidade.</span>
-                  </div>
-                  <span class="repo-stack-pill">Robot · E-commerce</span>
-                </a>
-              </li>
-              <li class="repo-item">
-                <a href="https://github.com/RafaelJrS/SeuBarrigaSeleniumWebDriver" target="_blank" rel="noopener noreferrer" class="repo-link">
-                  <div class="repo-info">
-                    <code class="repo-name">SeuBarrigaSeleniumWebDriver</code>
-                    <span class="repo-summary">Automação de fluxos financeiros e movimentações com Selenium WebDriver.</span>
-                  </div>
-                  <span class="repo-stack-pill">Selenium · Java</span>
-                </a>
-              </li>
-              <li class="repo-item">
-                <a href="https://github.com/RafaelJrS/webdriver-java" target="_blank" rel="noopener noreferrer" class="repo-link">
-                  <div class="repo-info">
-                    <code class="repo-name">webdriver-java</code>
-                    <span class="repo-summary">Arquitetura de testes automatizados em Java utilizando Selenium WebDriver e JUnit.</span>
-                  </div>
-                  <span class="repo-stack-pill">Java · WebDriver</span>
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          <div class="repo-category">
-            <h3 class="repo-cat-title">
-              <span aria-hidden="true">✦</span> IA, Dados &amp; Inovação Aplicada
-            </h3>
-            <ul class="repo-list">
-              <li class="repo-item">
-                <a href="https://github.com/RafaelJrS/Projeto_IAGoogleAlura" target="_blank" rel="noopener noreferrer" class="repo-link">
-                  <div class="repo-info">
-                    <code class="repo-name">Projeto_IAGoogleAlura</code>
-                    <span class="repo-summary">Exploração prática de IA Generativa, engenharia de prompts e automação inteligente com Gemini API.</span>
-                  </div>
-                  <span class="repo-stack-pill">GenAI · Python</span>
-                </a>
-              </li>
-              <li class="repo-item">
-                <a href="https://github.com/RafaelJrS/Imersao-Dados-com-Python" target="_blank" rel="noopener noreferrer" class="repo-link">
-                  <div class="repo-info">
-                    <code class="repo-name">Imersao-Dados-com-Python</code>
-                    <span class="repo-summary">Análise, tratamento e manipulação de dados com Python aplicados à tomada de decisão.</span>
-                  </div>
-                  <span class="repo-stack-pill">Python · Data</span>
-                </a>
-              </li>
-            </ul>
-
-            <div class="ai-governance-callout">
-              <h4>✦ AI-Driven QA &amp; Engenharia de Agentes</h4>
-              <p>
-                Fluxo de trabalho com agentes de IA estruturados por regras estritas de arquitetura em camadas, <strong>zero dados sensíveis</strong> no prompt, aderência ao <strong>ISTQB CTFL v4.0</strong> e revisão humana obrigatória.
-              </p>
-            </div>
-          </div>
-        </div>
+          <span class="page-step-indicator">02 / 04</span>
+        </footer>
       </div>
     </section>
 
-    <!-- 5. SEÇÃO "COMO EU TESTO" (INTERATIVA COM ABAS) -->
-    <section id="como-eu-testo" class="section" aria-labelledby="como-testo-title">
-      <div class="container">
-        <div class="section-header">
-          <span class="section-kicker">03 · Metodologia &amp; Engenharia de Qualidade</span>
-          <h2 id="como-testo-title" class="section-title">Como eu testo na prática</h2>
-          <p class="section-subtitle">
-            Navegue pelas abas abaixo (clique ou use as setas do teclado <kbd>←</kbd> <kbd>→</kbd>) para inspecionar meus padrões reais de arquitetura, reporte de defeitos, BDD e regressão contínua.
-          </p>
+    <!-- ======================================================================
+         PÁGINA 4: #como-testo (ABAS ESTILO CARDS NUMÉRICOS)
+         ====================================================================== -->
+    <section id="como-testo" class="page-slide" data-slide="como-testo" aria-labelledby="como-testo-heading">
+      <div class="container slide-inner">
+        <!-- Navegação de Abas em Cards Numéricos (01 a 05) -->
+        <div class="method-tabs-grid" role="tablist" aria-label="Metodologia de Engenharia de Testes">
+          <button type="button" class="method-tab-card is-active" role="tab" id="tab-ai" aria-selected="true" aria-controls="panel-ai" tabindex="0">
+            <span class="method-tab-num">01</span>
+            <strong class="method-tab-title">IA nos testes</strong>
+          </button>
+          <button type="button" class="method-tab-card" role="tab" id="tab-arch" aria-selected="false" aria-controls="panel-arch" tabindex="-1">
+            <span class="method-tab-num">02</span>
+            <strong class="method-tab-title">Arquitetura &amp; Seletores</strong>
+          </button>
+          <button type="button" class="method-tab-card" role="tab" id="tab-bug" aria-selected="false" aria-controls="panel-bug" tabindex="-1">
+            <span class="method-tab-num">03</span>
+            <strong class="method-tab-title">Bug Report</strong>
+          </button>
+          <button type="button" class="method-tab-card" role="tab" id="tab-bdd" aria-selected="false" aria-controls="panel-bdd" tabindex="-1">
+            <span class="method-tab-num">04</span>
+            <strong class="method-tab-title">Casos de Teste &amp; BDD</strong>
+          </button>
+          <button type="button" class="method-tab-card" role="tab" id="tab-ci" aria-selected="false" aria-controls="panel-ci" tabindex="-1">
+            <span class="method-tab-num">05</span>
+            <strong class="method-tab-title">Regressão &amp; CI/CD</strong>
+          </button>
         </div>
 
-        <div class="tabs-component">
-          <!-- Lista de Abas (Role Tablist) -->
-          <div class="tabs-nav" role="tablist" aria-label="Padrões de Engenharia de Qualidade">
-            <button
-              type="button"
-              class="tab-btn is-active"
-              role="tab"
-              id="tab-ai"
-              aria-selected="true"
-              aria-controls="panel-ai"
-              tabindex="0"
-            >
-              <span class="tab-num">01</span> AI-Driven QA
-            </button>
-            <button
-              type="button"
-              class="tab-btn"
-              role="tab"
-              id="tab-arch"
-              aria-selected="false"
-              aria-controls="panel-arch"
-              tabindex="-1"
-            >
-              <span class="tab-num">02</span> Arquitetura &amp; Seletores
-            </button>
-            <button
-              type="button"
-              class="tab-btn"
-              role="tab"
-              id="tab-bug"
-              aria-selected="false"
-              aria-controls="panel-bug"
-              tabindex="-1"
-            >
-              <span class="tab-num">03</span> Bug Report
-            </button>
-            <button
-              type="button"
-              class="tab-btn"
-              role="tab"
-              id="tab-bdd"
-              aria-selected="false"
-              aria-controls="panel-bdd"
-              tabindex="-1"
-            >
-              <span class="tab-num">04</span> Caso de Teste &amp; BDD
-            </button>
-            <button
-              type="button"
-              class="tab-btn"
-              role="tab"
-              id="tab-ci"
-              aria-selected="false"
-              aria-controls="panel-ci"
-              tabindex="-1"
-            >
-              <span class="tab-num">05</span> Estratégia de Regressão
-            </button>
+        <!-- ABA 01: IA NOS TESTES -->
+        <div class="method-panel is-active" id="panel-ai" role="tabpanel" aria-labelledby="tab-ai" tabindex="0">
+          <span class="slide-eyebrow">01 · IA NOS TESTES (AI-DRIVEN QA)</span>
+          <h2 id="como-testo-heading" class="slide-heading-sm">A IA acelera. A engenharia e a revisão são minhas.</h2>
+
+          <div class="ai-usage-grid">
+            <article class="ai-usage-card">
+              <span class="usage-kicker">USO 1</span>
+              <h3>Modelar cenários e fronteiras ISTQB</h3>
+              <p>
+                Transformo histórias de usuário e critérios de aceite em cenários Gherkin com apoio de IA, aplicando técnicas da <strong>CTFL v4.0</strong> (Partição de Equivalência e Análise de Valor Limite) para cobrir fluxos negativos que passariam despercebidos.
+              </p>
+              <ul class="usage-bullets">
+                <li><code>↳</code> Geração rápida de matrizes de testes positivos, negativos e de borda para finanças e e-commerce.</li>
+                <li><code>↳</code> Revisão crítica humana para eliminar cenários redundantes antes da automação.</li>
+              </ul>
+            </article>
+
+            <article class="ai-usage-card">
+              <span class="usage-kicker">USO 2</span>
+              <h3>Estruturar e refatorar automação E2E</h3>
+              <p>
+                Utilizo agentes configurados com regras de arquitetura (<code>@RafaQA.rules</code>) para acelerar a criação de Page Objects em <strong>Playwright, Robot Framework e Java</strong> mantendo padrão Clean Code.
+              </p>
+              <ul class="usage-bullets">
+                <li><code>↳</code> Em <strong>Play-swaglabs</strong> e <strong>ServeRest-java</strong>, toda sugestão respeita as camadas existentes.</li>
+                <li><code>↳</code> Refatoração assistida para remover sleeps fixos e substituir por asserções assíncronas estáveis.</li>
+              </ul>
+            </article>
+
+            <article class="ai-usage-card">
+              <span class="usage-kicker">FORMAÇÃO &amp; PRÁTICA</span>
+              <h3>Pós-Graduação em Engenharia de IA</h3>
+              <p>
+                Especialização na UNIPDS Educação (06/2026) focada em arquitetura de agentes, engenharia de prompts determinísticos e governança de IA no ciclo de vida de qualidade de software (SQA).
+              </p>
+              <a href="https://github.com/RafaelJrS/Projeto_IAGoogleAlura" target="_blank" rel="noopener noreferrer" class="usage-link">
+                Ver repositório de IA no GitHub ↗
+              </a>
+            </article>
           </div>
 
-          <!-- Painel 1: AI-Driven QA -->
-          <div
-            class="tab-panel is-active"
-            id="panel-ai"
-            role="tabpanel"
-            aria-labelledby="tab-ai"
-            tabindex="0"
-          >
-            <div class="panel-intro">
-              <h3>A IA acelera a geração, mas a engenharia e a revisão são 100% humanas</h3>
-              <p>
-                Utilizo LLMs e Agentes de IA guiados por regras de sistema (<code>@RafaQA.rules</code>) para expandir cobertura de cenários negativos, refatorar Page Objects e revisar PRs de testes, sustentado por <strong>3 pilares inegociáveis</strong>:
-              </p>
-            </div>
-
-            <div class="pillars-grid">
-              <article class="pillar-card">
-                <div class="pillar-header">
-                  <span class="pillar-badge">Pilar 01</span>
-                  <h4>Arquitetura em camadas sem código duplicado</h4>
-                </div>
-                <p>
-                  A IA nunca gera scripts monolíticos. Todo código assistido respeita a árvore de Page Objects, Keywords ou Steps existentes no projeto, reaproveitando helpers de autenticação, esperas explícitas e fixtures.
-                </p>
-              </article>
-
-              <article class="pillar-card">
-                <div class="pillar-header">
-                  <span class="pillar-badge">Pilar 02</span>
-                  <h4>Validação de falha real (Teste que nunca falha não protege)</h4>
-                </div>
-                <p>
-                  Todo teste automatizado passa por mutação ou inversão da asserção antes do merge para comprovar que ele realmente quebra quando a regra de negócio ou contrato da API REST é violado.
-                </p>
-              </article>
-
-              <article class="pillar-card">
-                <div class="pillar-header">
-                  <span class="pillar-badge">Pilar 03</span>
-                  <h4>Segurança &amp; Zero dados reais no prompt</h4>
-                </div>
-                <p>
-                  Conformidade rigorosa com LGPD e políticas corporativas: tokens, endpoints privados, CPFs ou payloads de clientes financeiros/Salesforce são anonimizados e substituídos por contratos sintéticos.
-                </p>
-              </article>
+          <div class="review-pillars-box">
+            <span class="review-box-kicker">COMO EU REVISO O QUE A IA ENTREGA</span>
+            <div class="review-pillars-row">
+              <div class="review-pillar">
+                <span class="review-num">01</span>
+                <strong>Arquitetura em camadas sem duplicação.</strong>
+                <p>Código gerado só entra no repositório se reutilizar Page Objects, Keywords, Steps e DataPools existentes.</p>
+              </div>
+              <div class="review-pillar">
+                <span class="review-num">02</span>
+                <strong>Validação de falha real.</strong>
+                <p>Teste que nunca ficou vermelho não prova nada. Inverto a asserção ou quebro a regra para garantir que o teste detecta regressões.</p>
+              </div>
+              <div class="review-pillar">
+                <span class="review-num">03</span>
+                <strong>Zero dados reais no prompt.</strong>
+                <p>Tokens, endpoints internos, CPFs e payloads de clientes financeiros ou Salesforce ficam 100% fora da conversa com o modelo.</p>
+              </div>
             </div>
           </div>
+        </div>
 
-          <!-- Painel 2: Arquitetura & Seletores -->
-          <div
-            class="tab-panel"
-            id="panel-arch"
-            role="tabpanel"
-            aria-labelledby="tab-arch"
-            tabindex="0"
-            hidden
-          >
-            <div class="panel-intro">
-              <h3>Resiliência contra Flakiness &amp; Separação em Camadas</h3>
-              <p>
-                A principal causa de falsos negativos em E2E é acoplar o teste à estrutura visual do DOM ou misturar locators com regras de negócio.
-              </p>
-            </div>
+        <!-- ABA 02: ARQUITETURA & SELETORES -->
+        <div class="method-panel" id="panel-arch" role="tabpanel" aria-labelledby="tab-arch" tabindex="0" hidden>
+          <span class="slide-eyebrow">02 · ARQUITETURA &amp; SELETORES</span>
+          <h2 class="slide-heading-sm">Seletores resilientes e separação estrita em 4 camadas.</h2>
 
-            <div class="code-comparison-grid">
-              <div class="code-box code-box-bad">
-                <div class="code-box-header">
-                  <span class="status-pill pill-danger">✕ Frágil (Acoplado ao layout / classes dinâmicas)</span>
-                </div>
-                <pre><code>// Quebra em qualquer ajuste de CSS ou div
-const btn = page.locator(
-  'xpath=/html/body/div[2]/div/main/form/div[4]/button[1]'
-);
+          <div class="code-comparison-grid">
+            <div class="code-box code-box-bad">
+              <div class="code-box-header">
+                <span class="status-pill pill-danger">✕ Seletor Frágil (XPath absoluto / Classe dinâmica / Sleep fixo)</span>
+              </div>
+              <pre><code>// Quebra com qualquer mudança visual no DOM
+const btn = page.locator('xpath=/html/body/div[2]/main/form/div[4]/button[1]');
 await page.locator('.css-1x9f8a-btnPrimary').click();
-await page.waitForTimeout(5000); // Sleep fixo = lentidão + flakiness</code></pre>
-              </div>
-
-              <div class="code-box code-box-good">
-                <div class="code-box-header">
-                  <span class="status-pill pill-success">✓ Estável (Atributo funcional &amp; Web-First Assertions)</span>
-                </div>
-                <pre><code>// Resiliente, semântico e auto-waiting nativo
-const submitOrderBtn = page.getByTestId('checkout-submit-btn');
-// ou acessível por role WCAG:
-// page.getByRole('button', { name: 'Finalizar Pedido' })
-await submitOrderBtn.click();
-await expect(page.getByTestId('order-status')).toHaveText('Aprovado');</code></pre>
-              </div>
+await page.waitForTimeout(5000); // Flakiness e lentidão na pipeline CI</code></pre>
             </div>
 
-            <div class="architecture-flow" aria-label="Fluxo de separação em camadas da automação">
-              <div class="arch-step">
-                <span class="arch-step-layer">Camada 1</span>
-                <strong>Testes / Specs</strong>
-                <span>Orquestra o cenário e valida asserções de negócio</span>
+            <div class="code-box code-box-good">
+              <div class="code-box-header">
+                <span class="status-pill pill-success">✓ Seletor Estável (data-testid / Role acessível + Auto-Wait)</span>
               </div>
-              <span class="arch-arrow" aria-hidden="true">→</span>
-              <div class="arch-step">
-                <span class="arch-step-layer">Camada 2</span>
-                <strong>Keywords / Steps</strong>
-                <span>Ações reutilizáveis de domínio (ex: fecharPedidoPix)</span>
-              </div>
-              <span class="arch-arrow" aria-hidden="true">→</span>
-              <div class="arch-step">
-                <span class="arch-step-layer">Camada 3</span>
-                <strong>Page Objects</strong>
-                <span>Encapsula locators estáveis (data-testid / roles)</span>
-              </div>
-              <span class="arch-arrow" aria-hidden="true">→</span>
-              <div class="arch-step">
-                <span class="arch-step-layer">Camada 4</span>
-                <strong>DataPool / Fixtures</strong>
-                <span>Massas dinâmicas, variáveis de ambiente e mocks</span>
-              </div>
+              <pre><code>// Resiliente a mudanças de layout e aderente a acessibilidade
+const finishBtn = page.getByTestId('checkout-finish-btn');
+// ou: page.getByRole('button', { name: 'Confirmar Pedido' })
+await finishBtn.click();
+await expect(page.getByTestId('order-status')).toHaveText('Pedido Confirmado');</code></pre>
             </div>
           </div>
 
-          <!-- Painel 3: Bug Report -->
-          <div
-            class="tab-panel"
-            id="panel-bug"
-            role="tabpanel"
-            aria-labelledby="tab-bug"
-            tabindex="0"
-            hidden
-          >
-            <div class="bug-report-card">
-              <header class="bug-header">
-                <div>
-                  <span class="bug-id">BUG-4092 · Finanças / Checkout E-commerce</span>
-                  <h3>[API/Web] Cobrança duplicada ao reenviar confirmação de pagamento via Pix com latência acima de 3s</h3>
-                </div>
-                <div class="bug-badges">
-                  <span class="status-pill pill-danger">Severidade: Alta (Crítica)</span>
-                  <span class="status-pill pill-warn">Prioridade: P1 (Imediata)</span>
-                </div>
-              </header>
+          <div class="architecture-flow">
+            <div class="arch-step">
+              <span class="arch-step-layer">Camada 01</span>
+              <strong>Testes / Specs</strong>
+              <span>Descreve o cenário de negócio e valida asserções finais</span>
+            </div>
+            <span class="arch-arrow" aria-hidden="true">→</span>
+            <div class="arch-step">
+              <span class="arch-step-layer">Camada 02</span>
+              <strong>Keywords / Steps</strong>
+              <span>Fluxos reutilizáveis de domínio (ex: realizarCheckoutPix)</span>
+            </div>
+            <span class="arch-arrow" aria-hidden="true">→</span>
+            <div class="arch-step">
+              <span class="arch-step-layer">Camada 03</span>
+              <strong>Page Objects</strong>
+              <span>Encapsula locators estáveis e interações de página</span>
+            </div>
+            <span class="arch-arrow" aria-hidden="true">→</span>
+            <div class="arch-step">
+              <span class="arch-step-layer">Camada 04</span>
+              <strong>DataPool / Fixtures</strong>
+              <span>Massas sintéticas, contratos JSON e variáveis de ambiente</span>
+            </div>
+          </div>
+        </div>
 
-              <div class="bug-meta-grid">
-                <div><strong>Ambiente:</strong> Staging (v2.18.4) · Chrome 130 / AWS Lambda Gateway</div>
-                <div><strong>Módulo:</strong> Checkout &amp; Integração CRM Salesforce</div>
-                <div><strong>Descoberto via:</strong> Automação E2E Playwright + Teste de Stress JMeter</div>
+        <!-- ABA 03: BUG REPORT -->
+        <div class="method-panel" id="panel-bug" role="tabpanel" aria-labelledby="tab-bug" tabindex="0" hidden>
+          <span class="slide-eyebrow">03 · REPORTE DE DEFEITOS ESTRUTURADO</span>
+          <h2 class="slide-heading-sm">Evidência clara para resolução rápida sem retrabalho.</h2>
+
+          <div class="bug-report-card">
+            <header class="bug-header">
+              <div>
+                <span class="bug-id">BUG-4092 · Checkout Financeiro &amp; CRM Salesforce</span>
+                <h3>[API/Web] Cobrança duplicada ao confirmar pagamento Pix sob latência de rede (&gt;3s)</h3>
               </div>
+              <div class="bug-badges">
+                <span class="status-pill pill-danger">Severidade: Crítica (S1)</span>
+                <span class="status-pill pill-warn">Prioridade: Alta (P1)</span>
+              </div>
+            </header>
 
-              <div class="bug-body-grid">
-                <div class="bug-section">
-                  <h4>Passos para Reproduzir</h4>
-                  <ol>
-                    <li>Autenticar com usuário válido no ambiente Staging e adicionar um item ao carrinho.</li>
-                    <li>Avançar para o pagamento, selecionar a modalidade <strong>Pix</strong> e interceptar/simular latência de 3.500ms na rota <code>POST /api/v1/payments/pix/confirm</code>.</li>
-                    <li>Acionar o botão <code>Confirmar Pagamento</code> duas vezes consecutivas dentro da janela de carregamento.</li>
-                    <li>Consultar os registros gerados no banco PostgreSQL e a oportunidade sincronizada no CRM Salesforce.</li>
-                  </ol>
-                </div>
+            <div class="bug-meta-grid">
+              <div><strong>Ambiente:</strong> Staging v2.18.4 · Chrome 130 / AWS API Gateway</div>
+              <div><strong>Módulo:</strong> Pagamentos Instantâneos &amp; Sync Salesforce</div>
+              <div><strong>Origem:</strong> Automação E2E Playwright + Teste de Stress JMeter</div>
+            </div>
 
-                <div class="bug-section">
-                  <div class="expected-vs-actual">
-                    <div class="eva-box eva-expected">
-                      <h5>✓ Resultado Esperado</h5>
-                      <p>O botão deve entrar em estado <code>disabled/loading</code> no primeiro clique e a API deve validar a chave de idempotência (<code>Idempotency-Key</code>), processando apenas <strong>1 transação</strong>.</p>
-                    </div>
-                    <div class="eva-box eva-actual">
-                      <h5>✕ Resultado Obtido</h5>
-                      <p>O front-end permite múltiplos disparos e o endpoint retorna dois <code>HTTP 201 Created</code> com <code>transaction_id</code> distintos, gerando cobrança duplicada no extrato e 2 registros no Salesforce.</p>
-                    </div>
+            <div class="bug-body-grid">
+              <div class="bug-section">
+                <h4>Passos para Reproduzir</h4>
+                <ol>
+                  <li>Autenticar na plataforma Staging com conta ativa e adicionar produto ao carrinho.</li>
+                  <li>Selecionar pagamento via <strong>Pix</strong> e simular throttling de rede (3.500ms) no endpoint <code>POST /api/v1/payments/pix/confirm</code>.</li>
+                  <li>Acionar o botão <code>Finalizar Pagamento</code> duas vezes seguidas antes do retorno da requisição.</li>
+                  <li>Verificar tabela de transações no PostgreSQL e oportunidades criadas no CRM Salesforce.</li>
+                </ol>
+              </div>
+              <div class="bug-section">
+                <div class="expected-vs-actual">
+                  <div class="eva-box eva-expected">
+                    <h5>✓ Resultado Esperado</h5>
+                    <p>O botão deve ficar desabilitado (<code>disabled</code>) após o 1º clique e o backend deve validar <code>Idempotency-Key</code>, registrando apenas 1 débito.</p>
+                  </div>
+                  <div class="eva-box eva-actual">
+                    <h5>✕ Resultado Obtido</h5>
+                    <p>Duas requisições retornam <code>HTTP 201 Created</code> com IDs distintos, debitando o saldo em duplicidade e abrindo 2 registros no Salesforce.</p>
                   </div>
                 </div>
               </div>
-
-              <footer class="bug-evidence">
-                <strong>Evidências Anexadas:</strong>
-                <code>trace-playwright-bug4092.zip</code> · <code>har-network-duplicate-post.har</code> · <code>cloudwatch-lambda-request-id-99a8b.log</code>
-              </footer>
             </div>
+
+            <footer class="bug-evidence">
+              <strong>Evidências:</strong>
+              <code>playwright-trace-4092.zip</code> · <code>network-duplicate-pix.har</code> · <code>aws-lambda-cloudwatch.log</code>
+            </footer>
           </div>
+        </div>
 
-          <!-- Painel 4: Caso de Teste & BDD -->
-          <div
-            class="tab-panel"
-            id="panel-bdd"
-            role="tabpanel"
-            aria-labelledby="tab-bdd"
-            tabindex="0"
-            hidden
-          >
-            <div class="bdd-layout">
-              <div class="code-box">
-                <div class="code-box-header">
-                  <span class="status-pill pill-info">Gherkin / BDD · transferencia_pix.feature</span>
-                </div>
-                <pre><code># language: pt
+        <!-- ABA 04: CASO DE TESTE & BDD -->
+        <div class="method-panel" id="panel-bdd" role="tabpanel" aria-labelledby="tab-bdd" tabindex="0" hidden>
+          <span class="slide-eyebrow">04 · MODELAGEM BDD &amp; TÉCNICAS ISTQB CTFL v4.0</span>
+          <h2 class="slide-heading-sm">Especificação viva que conecta negócio, DEV e automação.</h2>
+
+          <div class="bdd-split-grid">
+            <div class="code-box">
+              <div class="code-box-header">
+                <span class="status-pill pill-info">Gherkin · transferencia_pix.feature</span>
+              </div>
+              <pre><code># language: pt
 @financeiro @pix @regressao
-Funcionalidade: Transferência via Pix com validação de limite diário
-  Como correntista autenticado na plataforma financeira
-  Quero realizar transferências instantâneas via Pix
-  Para liquidar pagamentos respeitando meu limite de segurança configurado
-
-  Esquema do Cenário: Processamento de Pix dentro e fora do limite diário
-    Dado que o correntista possui saldo disponível de "R$ 5.000,00"
-    E seu limite diário disponível para Pix é de "R$ 2.000,00"
-    Quando solicita uma transferência Pix no valor de "&lt;valor_pix&gt;" para chave válida
-    Então a API deve responder com status HTTP &lt;status_http&gt;
-    E a interface deve exibir a mensagem "&lt;mensagem_esperada&gt;"
+Funcionalidade: Limite diário de transferência Pix
+  Esquema do Cenário: Validar transferência dentro e acima do limite
+    Dado que o cliente possui saldo de "R$ 5.000,00" e limite Pix de "R$ 2.000,00"
+    Quando envia um Pix de "&lt;valor&gt;" para uma chave válida
+    Então a API retorna HTTP &lt;status&gt; e a mensagem "&lt;retorno&gt;"
 
     Exemplos:
-      | cenario          | valor_pix   | status_http | mensagem_esperada                              |
-      | Caminho Feliz    | R$ 1.500,00 | 201         | Transferência Pix realizada com sucesso        |
-      | Limite Exato     | R$ 2.000,00 | 201         | Transferência Pix realizada com sucesso        |
-      | Acima do Limite  | R$ 2.000,01 | 422         | Valor excede o limite diário disponível (R$ 2k)|</code></pre>
-              </div>
-
-              <div class="table-responsive">
-                <table class="qa-table" aria-label="Tabela de Casos de Teste Funcionais">
-                  <thead>
-                    <tr>
-                      <th scope="col">ID</th>
-                      <th scope="col">Tipo / Técnica ISTQB</th>
-                      <th scope="col">Pré-condição &amp; Entrada</th>
-                      <th scope="col">Resultado Esperado</th>
-                      <th scope="col">Automação</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td><code>CT-01</code></td>
-                      <td>Caminho Feliz (Partição Válida)</td>
-                      <td>Saldo R$ 5.000 · Limite R$ 2.000 · Envio de <strong>R$ 1.500,00</strong></td>
-                      <td>HTTP 201, comprovante emitido e saldo atualizado para R$ 3.500,00.</td>
-                      <td><span class="status-pill pill-success">@smoke @e2e</span></td>
-                    </tr>
-                    <tr>
-                      <td><code>CT-02</code></td>
-                      <td>Análise de Valor Limite (Fronteira)</td>
-                      <td>Saldo R$ 5.000 · Limite R$ 2.000 · Envio de <strong>R$ 2.000,00</strong></td>
-                      <td>HTTP 201, transação aprovada no limite exato permitido.</td>
-                      <td><span class="status-pill pill-info">@api @regression</span></td>
-                    </tr>
-                    <tr>
-                      <td><code>CT-03</code></td>
-                      <td>Cenário Negativo (Fronteira +0,01)</td>
-                      <td>Saldo R$ 5.000 · Limite R$ 2.000 · Envio de <strong>R$ 2.000,01</strong></td>
-                      <td>HTTP 422 Unprocessable Entity, saldo intacto e alerta de limite excedido.</td>
-                      <td><span class="status-pill pill-warn">@api @negative</span></td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
-          </div>
-
-          <!-- Painel 5: Estratégia de Regressão -->
-          <div
-            class="tab-panel"
-            id="panel-ci"
-            role="tabpanel"
-            aria-labelledby="tab-ci"
-            tabindex="0"
-            hidden
-          >
-            <div class="panel-intro">
-              <h3>Orquestração de Testes Contínuos por Tags no CI/CD</h3>
-              <p>
-                Feedback rápido para desenvolvedores em cada Pull Request e cobertura profunda antes do deploy em produção usando <strong>GitHub Actions, GitLab CI e AWS Device Farm</strong>.
-              </p>
+      | cenario         | valor       | status | retorno                                |
+      | Caminho Feliz   | R$ 1.500,00 | 201    | Transferência Pix realizada com sucesso|
+      | Fronteira Exata | R$ 2.000,00 | 201    | Transferência Pix realizada com sucesso|
+      | Fronteira +0,01 | R$ 2.000,01 | 422    | Valor excede o limite diário disponível|</code></pre>
             </div>
 
             <div class="table-responsive">
-              <table class="qa-table" aria-label="Matriz de Estratégia de Regressão por Tags no CI/CD">
+              <table class="qa-table" aria-label="Casos de Teste Funcionais">
                 <thead>
                   <tr>
-                    <th scope="col">Tag de Execução</th>
-                    <th scope="col">Escopo &amp; Objetivo</th>
-                    <th scope="col">Gatilho no Pipeline (Trigger)</th>
-                    <th scope="col">Tempo Médio (SLA)</th>
-                    <th scope="col">Critério de Bloqueio (Quality Gate)</th>
+                    <th>ID</th>
+                    <th>Técnica CTFL v4.0</th>
+                    <th>Entrada</th>
+                    <th>Resultado Esperado</th>
+                    <th>Tag CI</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
-                    <td><code class="tag-code">@smoke</code></td>
-                    <td>Health check de login, checkout principal e disponibilidade de serviços críticos</td>
-                    <td>A cada Pull Request / Merge Request e Pós-Deploy</td>
-                    <td>~2 a 3 min</td>
-                    <td><span class="status-pill pill-danger">Bloqueia Merge (100% Pass)</span></td>
+                    <td><code>CT-01</code></td>
+                    <td>Partição Válida (Feliz)</td>
+                    <td>Pix R$ 1.500,00</td>
+                    <td>HTTP 201 · Comprovante gerado e saldo R$ 3.500,00</td>
+                    <td><span class="status-pill pill-success">@smoke</span></td>
                   </tr>
                   <tr>
-                    <td><code class="tag-code">@api</code></td>
-                    <td>Contratos JSON Schema, status codes, regras de negócio REST e idempotência</td>
-                    <td>Push em branches de feature / build de microsserviços</td>
-                    <td>~3 a 5 min</td>
-                    <td><span class="status-pill pill-danger">Bloqueia Pipeline</span></td>
+                    <td><code>CT-02</code></td>
+                    <td>Valor Limite (Fronteira)</td>
+                    <td>Pix R$ 2.000,00</td>
+                    <td>HTTP 201 · Transação aprovada no teto permitido</td>
+                    <td><span class="status-pill pill-info">@api</span></td>
                   </tr>
                   <tr>
-                    <td><code class="tag-code">@e2e</code></td>
-                    <td>Jornadas críticas completas Web (Playwright / Robot) e Mobile (Appium / AWS Device Farm)</td>
-                    <td>Deploy em Staging / Release Candidate</td>
-                    <td>~10 a 15 min (paralelizado)</td>
-                    <td><span class="status-pill pill-warn">Bloqueia Promoção p/ Prod</span></td>
-                  </tr>
-                  <tr>
-                    <td><code class="tag-code">@regression</code></td>
-                    <td>Suíte completa ponta a ponta + cenários de borda, integrações Salesforce e matriz multi-browser</td>
-                    <td>Nightly Build (Cron diário) &amp; Pré-Release</td>
-                    <td>~25 a 35 min (3+ workers)</td>
-                    <td><span class="status-pill pill-info">Relatório + Alerta Slack/Jira</span></td>
+                    <td><code>CT-03</code></td>
+                    <td>Cenário Negativo (+0,01)</td>
+                    <td>Pix R$ 2.000,01</td>
+                    <td>HTTP 422 · Transação bloqueada e saldo intacto</td>
+                    <td><span class="status-pill pill-warn">@regression</span></td>
                   </tr>
                 </tbody>
               </table>
             </div>
           </div>
         </div>
+
+        <!-- ABA 05: ESTRATÉGIA DE REGRESSÃO -->
+        <div class="method-panel" id="panel-ci" role="tabpanel" aria-labelledby="tab-ci" tabindex="0" hidden>
+          <span class="slide-eyebrow">05 · ESTRATÉGIA DE REGRESSÃO CONTÍNUA NO CI/CD</span>
+          <h2 class="slide-heading-sm">Recortes inteligentes por tags para feedback rápido no pipeline.</h2>
+
+          <div class="table-responsive">
+            <table class="qa-table" aria-label="Estratégia de execução por tags no CI/CD">
+              <thead>
+                <tr>
+                  <th>Tag</th>
+                  <th>Escopo de Cobertura</th>
+                  <th>Gatilho (GitHub Actions / GitLab CI)</th>
+                  <th>Duração Média</th>
+                  <th>Quality Gate</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><code class="tag-code">@smoke</code></td>
+                  <td>Login, health check de APIs críticas e fluxo principal de compra/transação</td>
+                  <td>A cada Pull Request / Merge Request</td>
+                  <td>~2 min</td>
+                  <td><span class="status-pill pill-danger">Bloqueia Merge</span></td>
+                </tr>
+                <tr>
+                  <td><code class="tag-code">@api</code></td>
+                  <td>Contratos REST, schemas JSON, regras de negócio e autenticação (ServeRest / Postman)</td>
+                  <td>Push em branches e build de microsserviços</td>
+                  <td>~4 min</td>
+                  <td><span class="status-pill pill-danger">Bloqueia Pipeline</span></td>
+                </tr>
+                <tr>
+                  <td><code class="tag-code">@e2e</code></td>
+                  <td>Jornadas críticas Web (Playwright / Robot) e Mobile (Appium / AWS Device Farm)</td>
+                  <td>Deploy em Staging / Release Candidate</td>
+                  <td>~12 min (paralelo)</td>
+                  <td><span class="status-pill pill-warn">Bloqueia Deploy Prod</span></td>
+                </tr>
+                <tr>
+                  <td><code class="tag-code">@regression</code></td>
+                  <td>Suíte completa E2E + fluxos negativos, integrações Salesforce e multi-browser</td>
+                  <td>Nightly Build (Agendado) &amp; Pré-Release</td>
+                  <td>~28 min (3 workers)</td>
+                  <td><span class="status-pill pill-info">Reporte + Alerta Time</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- Rodapé de Paginação -->
+        <footer class="slide-pagination-footer">
+          <a href="#projetos" data-slide-link="projetos" class="page-back-link">↑ voltar: projetos</a>
+          <a href="#contato" data-slide-link="contato" class="scroll-cue">
+            <span class="mouse-icon" aria-hidden="true"><span class="mouse-wheel"></span></span>
+            <span>próximo: contato</span>
+          </a>
+          <span class="page-step-indicator">03 / 04</span>
+        </footer>
       </div>
     </section>
 
-    <!-- 6. MÉTRICAS / MINI DASHBOARD -->
-    <section id="metricas" class="section section-alt" aria-labelledby="metricas-title">
-      <div class="container">
-        <div class="section-header">
-          <span class="section-kicker">04 · Telemetria &amp; Indicadores de Qualidade</span>
-          <h2 id="metricas-title" class="section-title">Métricas &amp; Cobertura de Automação</h2>
-          <p class="section-subtitle">
-            Dashboard dinâmico alimentado por <code>data/metrics.json</code> refletindo distribuição de stack, cobertura por camada da pirâmide de testes e indicadores de impacto em engenharia de qualidade.
-          </p>
-        </div>
-
-        <!-- KPIs de Impacto -->
-        <div class="metrics-kpi-grid" id="metricsKpiGrid" aria-live="polite">
-          <!-- Renderizado via JS a partir de data/metrics.json (com fallback inicial) -->
-          <article class="kpi-card">
-            <span class="kpi-value">-68%</span>
-            <h3 class="kpi-label">Redução de Bugs Críticos em Produção</h3>
-            <p class="kpi-context">Com Shift-Left Testing, revisão de requisitos BDD e regressão contínua em CI/CD</p>
-          </article>
-          <article class="kpi-card">
-            <span class="kpi-value">85%+</span>
-            <h3 class="kpi-label">Cobertura de Jornadas Críticas (Regressivo)</h3>
-            <p class="kpi-context">Fluxos financeiros, checkout e-commerce e integrações CRM Salesforce</p>
-          </article>
-          <article class="kpi-card">
-            <span class="kpi-value">6</span>
-            <h3 class="kpi-label">Repositórios Públicos de QA &amp; IA</h3>
-            <p class="kpi-context">Playwright, Robot Framework, Selenium WebDriver (Java) e Engenharia de IA</p>
-          </article>
-        </div>
-
-        <!-- Gráficos Visuais: Linguagens + Cobertura por Camada -->
-        <div class="dashboard-charts-grid">
-          <!-- Card 1: Distribuição de Linguagens -->
-          <article class="chart-card" aria-labelledby="chart-lang-title">
-            <header class="chart-card-header">
-              <div>
-                <h3 id="chart-lang-title">Distribuição de Linguagens em Automação</h3>
-                <p>Proporção prática nos projetos e suítes E2E/API</p>
-              </div>
-              <span class="json-badge" title="Dados carregados de data/metrics.json">data/metrics.json</span>
-            </header>
-
-            <div class="lang-stacked-bar" id="langStackedBar" role="img" aria-label="Gráfico de distribuição de linguagens: Python 34%, TypeScript e JavaScript 32%, Java 22%, SQL e Gherkin 12%">
-              <!-- Preenchido via JS -->
-            </div>
-
-            <ul class="lang-legend-list" id="langLegendList">
-              <!-- Preenchido via JS -->
-            </ul>
-          </article>
-
-          <!-- Card 2: Cobertura por Camada -->
-          <article class="chart-card" aria-labelledby="chart-layer-title">
-            <header class="chart-card-header">
-              <div>
-                <h3 id="chart-layer-title">Proficiência &amp; Cobertura por Camada</h3>
-                <p>Pirâmide de testes: Web, API REST, Mobile, Performance e AI-Driven QA</p>
-              </div>
-              <span class="json-badge">ISTQB CTFL v4.0</span>
-            </header>
-
-            <div class="layer-bars-list" id="layerBarsList">
-              <!-- Preenchido via JS -->
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- 7. CONTATO E RODAPÉ -->
-    <section id="contato" class="section contact-section" aria-labelledby="contato-title">
-      <div class="container">
-        <div class="contact-card">
-          <div class="contact-content">
-            <span class="badge badge-status">
-              <span class="status-dot" aria-hidden="true"></span>
-              Disponível para oportunidades de QA Pleno / Sênior &amp; QA Automation Engineer
-            </span>
-            <h2 id="contato-title" class="contact-title">Vamos elevar a qualidade e a confiabilidade do seu produto?</h2>
-            <p class="contact-desc">
-              Estou aberto a propostas para atuação <strong>Remota ou Híbrida (São Paulo / Mogi das Cruzes - SP)</strong>. Se sua equipe busca um QA com visão analítica de risco (ISTQB CTFL v4.0), automação sólida em CI/CD e produtividade potencializada por Engenharia de IA, entre em contato:
+    <!-- ======================================================================
+         PÁGINA 5: #contato (VAMOS CONVERSAR + TERMINAL DISPONIBILIDADE.SH)
+         ====================================================================== -->
+    <section id="contato" class="page-slide" data-slide="contato" aria-labelledby="contato-heading">
+      <div class="container slide-inner">
+        <div class="contact-split-grid">
+          <!-- Lado Esquerdo -->
+          <div class="contact-left">
+            <span class="slide-eyebrow">VAMOS CONVERSAR</span>
+            <h2 id="contato-heading" class="contact-big-title">Tem uma vaga de QA em mente?</h2>
+            <p class="contact-lead">
+              Estou aberto a oportunidades como <strong>Analista de Qualidade de Software (QA) Pleno/Sênior ou QA Automation Engineer / SDET</strong> (Remoto ou Híbrido - SP) e a conversas sobre automação Web/API/Mobile, cultura Shift-Left e IA aplicada a testes.
             </p>
 
-            <div class="contact-actions">
-              <a href="mailto:silvarafaeljr@gmail.com?subject=Oportunidade%20QA%20Automation%20-%20Contato%20via%20Portf%C3%B3lio" class="btn btn-primary btn-lg">
-                ✉ Enviar E-mail (silvarafaeljr@gmail.com)
+            <div class="contact-rows">
+              <a href="mailto:silvarafaeljr@gmail.com?subject=Oportunidade%20QA%20Automation%20-%20Portf%C3%B3lio" class="contact-row-card is-highlighted">
+                <span class="contact-row-label">E-MAIL</span>
+                <strong class="contact-row-val">silvarafaeljr@gmail.com</strong>
+                <span class="contact-row-arrow" aria-hidden="true">↗</span>
               </a>
-              <a href="https://www.linkedin.com/in/rafael-junio-da-silva" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-lg">
-                Conectar no LinkedIn <span aria-hidden="true">↗</span>
+
+              <a href="https://www.linkedin.com/in/rafael-junio-da-silva" target="_blank" rel="noopener noreferrer" class="contact-row-card">
+                <span class="contact-row-label">LINKEDIN</span>
+                <strong class="contact-row-val">in/rafael-junio-da-silva</strong>
+                <span class="contact-row-arrow" aria-hidden="true">↗</span>
               </a>
-              <a href="https://github.com/RafaelJrS" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-lg">
-                Ver GitHub <span aria-hidden="true">↗</span>
+
+              <a href="https://github.com/RafaelJrS" target="_blank" rel="noopener noreferrer" class="contact-row-card">
+                <span class="contact-row-label">GITHUB</span>
+                <strong class="contact-row-val">RafaelJrS</strong>
+                <span class="contact-row-arrow" aria-hidden="true">↗</span>
               </a>
-              <a href="docs/curriculo-rafael-mello.pdf" download="Curriculo-Rafael-Mello-QA.pdf" target="_blank" rel="noopener" class="btn btn-outline btn-lg">
-                Baixar Currículo (PDF)
+
+              <a href="docs/curriculo-rafael-mello.pdf" download="Curriculo-Rafael-Mello-QA.pdf" target="_blank" rel="noopener" class="contact-row-card">
+                <span class="contact-row-label">CURRÍCULO</span>
+                <strong class="contact-row-val">curriculo-rafael-mello.pdf</strong>
+                <span class="contact-row-arrow" aria-hidden="true">↓</span>
               </a>
             </div>
           </div>
+
+          <!-- Lado Direito: Terminal disponibilidade.sh -->
+          <div class="contact-right">
+            <div class="terminal-window" role="region" aria-label="Terminal de disponibilidade profissional">
+              <div class="terminal-topbar">
+                <div class="win-dots" aria-hidden="true">
+                  <span></span><span></span><span></span>
+                </div>
+                <span class="win-filename">disponibilidade.sh</span>
+                <span></span>
+              </div>
+
+              <div class="terminal-content term-env-table">
+                <div class="term-cmd">$ ./disponibilidade --hoje</div>
+
+                <dl class="env-list">
+                  <div class="env-row">
+                    <dt>status</dt>
+                    <dd><span class="env-dot" aria-hidden="true"></span> aberto a propostas</dd>
+                  </div>
+                  <div class="env-row">
+                    <dt>cargo</dt>
+                    <dd>Analista de Qualidade (QA) / QA Automation Engineer</dd>
+                  </div>
+                  <div class="env-row">
+                    <dt>certificação</dt>
+                    <dd>ISTQB CTFL v4.0 + Pós em Engenharia de IA</dd>
+                  </div>
+                  <div class="env-row">
+                    <dt>local</dt>
+                    <dd>Mogi das Cruzes, SP - Brasil (Remoto / Híbrido)</dd>
+                  </div>
+                  <div class="env-row">
+                    <dt>foco</dt>
+                    <dd>Web E2E, API REST, Mobile &amp; CI/CD</dd>
+                  </div>
+                  <div class="env-row">
+                    <dt>stack</dt>
+                    <dd>Playwright, Robot Framework, Cypress, Selenium, Java, Python, TS</dd>
+                  </div>
+                  <div class="env-row">
+                    <dt>setores</dt>
+                    <dd>financeiro, e-commerce e CRM Salesforce</dd>
+                  </div>
+                  <div class="env-row">
+                    <dt>ia</dt>
+                    <dd>AI-Driven QA · geração e revisão assistida de testes</dd>
+                  </div>
+                </dl>
+
+                <div class="term-cmd term-prompt-blink">$ <span class="cursor-block" aria-hidden="true">_</span></div>
+              </div>
+            </div>
+          </div>
         </div>
+
+        <!-- Rodapé de Paginação -->
+        <footer class="slide-pagination-footer">
+          <a href="#como-testo" data-slide-link="como-testo" class="page-back-link">↑ voltar: como testo</a>
+          <a href="#topo" data-slide-link="topo" class="scroll-cue">
+            <span class="mouse-icon" aria-hidden="true"><span class="mouse-wheel"></span></span>
+            <span>voltar ao início</span>
+          </a>
+          <span class="page-step-indicator">04 / 04</span>
+        </footer>
       </div>
     </section>
   </main>
-
-  <footer class="site-footer" role="contentinfo">
-    <div class="container footer-inner">
-      <div class="footer-left">
-        <p class="footer-brand">
-          <strong>Rafael Junio da Silva Mello</strong> · Analista de Qualidade de Software (QA) | QA Automation Engineer
-        </p>
-        <p class="footer-meta">
-          Mogi das Cruzes, SP - Brasil · CTFL v4.0 (ISTQB) · Pós-Graduando em Engenharia de IA · Bacharel em Ciência da Computação
-        </p>
-      </div>
-      <div class="footer-right">
-        <a href="#topo" class="back-to-top" aria-label="Voltar ao topo da página">
-          ↑ Voltar ao topo
-        </a>
-      </div>
-    </div>
-  </footer>
 
   <script src="js/main.js" defer></script>
 </body>
