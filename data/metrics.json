@@ -1,0 +1,67 @@
+{
+  "updatedAt": "Novembro 2026",
+  "summary": {
+    "experienceYears": "+5 anos",
+    "repositoriesCount": 8,
+    "starredRepositories": 3,
+    "certification": "CTFL v4.0 (ISTQB)",
+    "postGrad": "Pós em Eng. de IA (06/2026)",
+    "automationPassRate": "99.4%",
+    "avgPipelineTime": "4m 12s"
+  },
+  "languages": [
+    { "name": "Python (Robot / AI / Data)", "percentage": 34, "color": "#10b981" },
+    { "name": "TypeScript / JavaScript (Playwright)", "percentage": 30, "color": "#38bdf8" },
+    { "name": "Java (ServeRest / Selenium)", "percentage": 24, "color": "#f59e0b" },
+    { "name": "SQL & Gherkin / BDD", "percentage": 12, "color": "#a855f7" }
+  ],
+  "coverageByLayer": [
+    {
+      "layer": "Automação Web E2E",
+      "tools": "Playwright, Robot Framework, Cypress, Selenium",
+      "score": 95,
+      "badge": "Core Stack"
+    },
+    {
+      "layer": "Testes de API REST & Contratos",
+      "tools": "Postman, Insomnia, Requests, RestAssured",
+      "score": 90,
+      "badge": "Shift-Left"
+    },
+    {
+      "layer": "Mobile & Cloud Testing",
+      "tools": "Appium, AWS Device Farm",
+      "score": 80,
+      "badge": "Cross-Device"
+    },
+    {
+      "layer": "Performance, Stress & CI/CD",
+      "tools": "JMeter, GitHub Actions, GitLab CI, Docker",
+      "score": 85,
+      "badge": "DevOps / SRE"
+    },
+    {
+      "layer": "AI-Driven QA & Engenharia de Prompts",
+      "tools": "Agentes de QA, Geração de Cenários, Code Review IA",
+      "score": 88,
+      "badge": "Inovação"
+    }
+  ],
+  "qualityIndicators": [
+    {
+      "label": "Redução de Bugs Críticos em Produção",
+      "value": "-68%",
+      "context": "Com Shift-Left Testing, revisão de requisitos BDD e regressão contínua em CI/CD"
+    },
+    {
+      "label": "Cobertura de Jornadas Críticas (Regressivo)",
+      "value": "85%+",
+      "context": "Fluxos financeiros, checkout e-commerce e integrações CRM Salesforce"
+    },
+    {
+      "label": "Ganho de Produtividade em Design de Testes",
+      "value": "2.4x",
+      "context": "Combinando modelagem ISTQB CTFL v4.0 com Engenharia de IA e revisão humana"
+    }
+  ]
+}
